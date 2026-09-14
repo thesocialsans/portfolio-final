@@ -20,7 +20,7 @@
 .about-hero__illustration {
   position: absolute;
   left: 52.044%;
-  top: calc(36% - 48px);
+  top: calc(36% - 96px);
   width: 45.604%;
   height: 60.215%;
   transform: translateX(-50%);
@@ -54,19 +54,19 @@
 
 .about-hero__caption--designer {
   left: 34.375%;
-  top: 13.056%;
+  top: calc(13.056% - 48px);
   width: 20.469%;
 }
 
 .about-hero__caption--heart {
   left: 8.542%;
-  top: 50.583%;
+  top: calc(50.583% - 48px);
   width: 19.614%;
 }
 
 .about-hero__caption--brain {
   left: calc(73.134% + 24px);
-  top: 50.583%;
+  top: calc(50.583% - 48px);
   width: 18.272%;
 }
 
