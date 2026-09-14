@@ -65,8 +65,8 @@
 }
 
 .about-hero__caption--brain {
-  left: 73.134%;
-  top: 71.098%;
+  left: calc(73.134% + 24px);
+  top: 50.583%;
   width: 18.272%;
 }
 
