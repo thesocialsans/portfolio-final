@@ -28,7 +28,7 @@
   height: auto;
 }
 
-/* ---------- Section shell ---------- */
+/* ---------- Section shell (mirrors the Payroll/About article grid) ---------- */
 .ad-section {
   max-width: 962px;
   margin: 0 auto;
@@ -48,6 +48,9 @@
 .ad-eyebrow--spaced {
   margin-top: 56px;
 }
+.ad-eyebrow--center {
+  text-align: center;
+}
 .ad-italic-head {
   font-family: var(--font-name);
   font-weight: 400;
@@ -58,6 +61,49 @@
 }
 .ad-italic-head:first-of-type {
   margin-top: 0;
+}
+.ad-italic-head--center {
+  text-align: center;
+}
+
+/* Big bold title flanked by its intro paragraph, matching Issues/Business
+   Opportunities in the reference. */
+.ad-section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 32px 0 24px;
+}
+.ad-section-header--spaced {
+  margin-top: 48px;
+}
+.ad-section-header__title {
+  font-family: var(--font-name);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  color: var(--ad-ink);
+  margin: 0;
+  flex-shrink: 0;
+  width: 240px;
+}
+.ad-section-header__intro {
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-body-text);
+  margin: 6px 0 0;
+}
+
+@media (max-width: 640px) {
+  .ad-section-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .ad-section-header__title {
+    width: auto;
+  }
 }
 .ad-section__intro {
   max-width: 72ch;
@@ -74,6 +120,9 @@
   font-weight: 600;
   font-size: 13px;
   margin: 18px 0 8px;
+}
+.ad-label--spaced {
+  margin-top: 40px;
 }
 
 h3, h4 {
@@ -111,14 +160,6 @@ li {
   font-size: 15px;
   max-width: 78ch;
 }
-.ad-overview__visual {
-  display: block;
-  width: auto;
-  max-width: min(100%, 560px);
-  height: auto;
-  margin: 32px auto 0;
-}
-
 /* ---------- Columns ---------- */
 .ad-two-col {
   display: grid;
@@ -148,68 +189,116 @@ li {
 }
 
 /* ---------- Branding ---------- */
-.ad-branding {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
 .ad-branding__logo {
-  width: 140px;
+  width: 220px;
   height: auto;
+  display: block;
+  margin-bottom: 8px;
 }
 .ad-swatches {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   margin-bottom: 8px;
 }
 .ad-swatch {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: 74px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.ad-swatch--bordered {
+  border: 1px solid rgba(28, 28, 30, 0.15);
+}
+.ad-swatch__name {
+  font-family: var(--font-name);
+  font-size: 13px;
+  opacity: 0.85;
+}
+.ad-swatch__hex {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.ad-typography {
+  display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 14px;
+  gap: 16px;
+  margin-bottom: 8px;
 }
-.ad-swatch__chip {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: inline-block;
-  flex-shrink: 0;
+.ad-typography__pill {
+  font-family: 'Manrope', var(--font-neutra), sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ffffff;
+  background: var(--ad-ink);
+  padding: 10px 28px;
+  border-radius: 999px;
 }
-.ad-swatch__chip--bordered {
-  border: 1px solid rgba(28, 28, 30, 0.2);
-}
-.ad-branding__type {
+.ad-typography__plain {
   font-family: 'Manrope', var(--font-neutra), sans-serif;
   font-size: 22px;
-  margin: 0;
+}
+.ad-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ad-icon {
+  width: 26px;
+  height: 26px;
+  color: var(--ad-ink);
+}
+.ad-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* ---------- Stats ---------- */
 .ad-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px 32px;
-  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+  counter-reset: stat;
 }
 .ad-stat {
-  display: flex;
-  gap: 16px;
-  align-items: baseline;
+  counter-increment: stat;
 }
-.ad-stat__num {
+.ad-stat__text {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+.ad-stat__text::before {
+  content: counter(stat) '. ';
+  font-weight: 600;
+  color: var(--ad-brown);
+}
+.ad-stat__bar {
+  position: relative;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--ad-brown);
+}
+.ad-stat__bar-fill {
+  height: 100%;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  background: var(--ad-ink);
+  color: #ffffff;
   font-family: var(--font-name);
   font-weight: 600;
-  font-size: 28px;
-  color: var(--ad-brown);
-  margin: 0;
-  flex-shrink: 0;
-  min-width: 64px;
-}
-.ad-stat p {
-  font-size: 14px;
-  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;
 }
 .ad-callout {
   padding: 20px 24px;
@@ -220,17 +309,134 @@ li {
   line-height: 1.55;
 }
 
-/* ---------- Challenges ---------- */
-.ad-challenges {
-  counter-reset: none;
-  font-family: var(--font-name);
-  font-size: 17px;
+/* ---------- Affinity mapping (browser-chrome card) ---------- */
+.ad-browser-card {
+  border: 1px solid rgba(28, 28, 30, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(28, 28, 30, 0.08);
 }
-.ad-challenges li {
-  margin-bottom: 10px;
+.ad-browser-card__bar {
+  display: flex;
+  gap: 8px;
+  padding: 14px 16px;
+  background: #f2f2f2;
+  border-bottom: 1px solid rgba(28, 28, 30, 0.1);
+}
+.ad-browser-card__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.ad-affinity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 24px;
+  background: #fbfbfb;
+}
+.ad-affinity__col {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 18px;
+}
+.ad-affinity__col h4 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.ad-affinity__col--orange {
+  background: rgba(255, 140, 0, 0.06);
+  border-color: rgba(255, 140, 0, 0.4);
+}
+.ad-affinity__col--green {
+  background: rgba(40, 180, 100, 0.06);
+  border-color: rgba(40, 180, 100, 0.4);
+}
+.ad-affinity__col--blue {
+  background: rgba(60, 140, 220, 0.06);
+  border-color: rgba(60, 140, 220, 0.4);
+}
+.ad-affinity__note {
+  background: #ffffff;
+  border: 1px solid rgba(28, 28, 30, 0.1);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.ad-affinity__note:last-child {
+  margin-bottom: 0;
 }
 
-/* ---------- Personas / process / IA / flow images ---------- */
+/* ---------- Challenges ---------- */
+.ad-challenges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  font-family: var(--font-name);
+  font-size: 16px;
+  list-style: none;
+  padding: 0;
+}
+.ad-challenges li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.ad-challenges__num {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(28, 28, 30, 0.25);
+  flex-shrink: 0;
+}
+
+/* ---------- Pain point cards ---------- */
+.ad-pain-card {
+  background: #f6f6f6;
+  border-radius: 8px;
+  padding: 24px;
+}
+.ad-pain-card__dash {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--ad-brown);
+  margin-bottom: 14px;
+  border-radius: 2px;
+}
+.ad-pain-card h4 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.ad-pain-card p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* ---------- Wireframe screen captions ---------- */
+.ad-screen-captions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ad-screen-captions p {
+  margin: 0;
+  font-family: var(--font-name);
+  font-size: 15px;
+}
+.ad-screen-captions__num {
+  color: var(--color-body-text);
+}
+.ad-screen-captions__name {
+  color: var(--ad-brown);
+  font-weight: 600;
+}
+
 .ad-process-image {
   max-width: 900px;
 }
@@ -245,11 +451,11 @@ li {
 .ad-screen__main {
   display: block;
   width: auto;
-  max-width: 320px;
+  max-width: 280px;
   height: auto;
-  margin: 0 auto 24px;
   border-radius: 12px;
   box-shadow: 0 20px 48px rgba(28, 28, 30, 0.12);
+  flex-shrink: 0;
 }
 .ad-screen__title {
   font-family: var(--font-name);
@@ -258,13 +464,75 @@ li {
   font-size: 19px;
   color: var(--ad-brown);
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+/* Annotations flank the phone. Each line's arrow-in-circle marker sits on its
+   own row directly below the text, matching the reference callout style. */
+.ad-annotated {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 .ad-annotations {
-  max-width: 560px;
-  margin: 0 auto;
-  font-size: 14.5px;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-neutra);
+  font-size: 13px;
+  font-style: normal;
+  line-height: 1.5;
   color: var(--color-body-text);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding-top: 12px;
+}
+.ad-annotations li {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ad-annotations li::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ad-ink);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/%3E%3C/svg%3E") center/9px no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/%3E%3C/svg%3E") center/9px no-repeat;
+}
+.ad-annotations--left {
+  text-align: right;
+}
+.ad-annotations--left li {
+  align-items: flex-end;
+}
+.ad-annotations--right li {
+  align-items: flex-start;
+}
+
+@media (max-width: 760px) {
+  .ad-annotated {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ad-screen__main {
+    order: -1;
+    max-width: 260px;
+  }
+  .ad-annotations,
+  .ad-annotations--left {
+    text-align: left;
+    max-width: 320px;
+  }
+  .ad-annotations--left li {
+    align-items: flex-start;
+  }
 }
 
 /* ---------- Reflection ---------- */
@@ -293,30 +561,40 @@ li {
   line-height: 1.5;
   margin: 0;
 }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .ad-hero {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 120px;
-  }
-  .ad-hero__copy {
-    max-width: 100%;
-  }
+.ad-reflection__rule {
+  border: none;
+  border-top: 1px solid rgba(28, 28, 30, 0.15);
+  max-width: 300px;
+  margin: 128px auto 128px;
+}
+.ad-reflection__signoff {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.75;
+  margin: 0 0 4px;
 }
 
+/* ---------- Responsive ---------- */
 @media (max-width: 700px) {
-  .ad-two-col,
-  .ad-stats {
+  .ad-two-col {
     grid-template-columns: 1fr;
   }
   .ad-three-col {
     grid-template-columns: 1fr;
   }
-  .ad-branding {
-    flex-direction: column;
-    align-items: flex-start;
+  .ad-swatches {
+    grid-template-columns: 1fr;
+  }
+  .ad-affinity {
+    grid-template-columns: 1fr;
+  }
+  .ad-challenges {
+    grid-template-columns: 1fr;
+  }
+  .ad-screen-captions {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 

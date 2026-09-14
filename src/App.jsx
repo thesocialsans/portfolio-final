@@ -5,6 +5,9 @@ import Portfolio from './pages/Portfolio'
 import ProjectPlaceholder from './pages/ProjectPlaceholder'
 import ProjectAiRecruitment from './pages/ProjectAiRecruitment'
 import ProjectAdoptDontShop from './pages/ProjectAdoptDontShop'
+import ProjectWhoAreYouWhenYouVote from './pages/ProjectWhoAreYouWhenYouVote'
+import ProjectFindingYourWay from './pages/ProjectFindingYourWay'
+import ProjectCoverMitra from './pages/ProjectCoverMitra'
 import BackgroundMusic from './components/BackgroundMusic'
 
 function App() {
@@ -17,23 +20,9 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/projects/ai-recruitment-screening" element={<ProjectAiRecruitment />} />
         <Route path="/projects/pet-adoption" element={<ProjectAdoptDontShop />} />
-        <Route
-          path="/projects/who-are-you-when-you-vote"
-          element={
-            <ProjectPlaceholder
-              title="Who are you, when you vote?"
-              category="Editorial & Interaction Design | 2025"
-            />
-          }
-        />
-        <Route
-          path="/projects/covermitra"
-          element={<ProjectPlaceholder title="Before you need it." category="Insurance & Service Design | 2023" />}
-        />
-        <Route
-          path="/projects/tnstc"
-          element={<ProjectPlaceholder title="Finding your way." category="Public Service UX | 2022" />}
-        />
+        <Route path="/projects/who-are-you-when-you-vote" element={<ProjectWhoAreYouWhenYouVote />} />
+        <Route path="/projects/covermitra" element={<ProjectCoverMitra />} />
+        <Route path="/projects/tnstc" element={<ProjectFindingYourWay />} />
       </Routes>
     </>
   )

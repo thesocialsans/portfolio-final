@@ -1,0 +1,1104 @@
+Total pages: 1
+
+
+===== PAGE 1 (w=1920 h=21776) =====
+
+Sangavi Ramesh Resume Ho m e A b o u t Po r tfo l i o
+UX Design, Research, Synthesis, Prototyping
+Designing for clarity in complex
+public systems
+Improving usability in TNSTC app
+Timeline
+4 weeks design case study
+9:41 9:41 9:41
+15 FEB Passenger information Chennai -Bangalore
+TNSTC Chennai - Bangalore 24 buses available SATURDAY
+Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45
+View more Book your bus ticket Top Offers Chennai - Adyar Bangalore - Electronic City
+A/C Sleeper
+Chennai Use the code,
+ Use the code,
+
+From
+- Lower berth 5A, 6B 2 seats Tambaram View more
+get upto 10% get upto 10%
+cashback cashback
+For first-time users For first-time users
+Bangalore
+To
+Valid till 10th March Valid till 10th March Details of primary contact
+Koramangala
+Your ticket details will be sent to? FIRST FIRST
+Select the date
+15 FEB
+Enter your E-mail address 18 19 20
+Top rated buses
+SATURDAY
+Mon Tues Wed
++91 Enter your mobile number 20:30 - 05.45 4.5/5 How many passengers?
+467
+6h 30m . via HOSUR
+1 Adult, 2 Children
+Send booking details on Whatsapp A/C Sleeper ₹ 978
+12 seats available ₹ 716
+Send booking details through SMS Search for buses
+Valid till 10th March Upto 10% cashback available
+Passenger information
+Recent searches
+21:15 - 05.45 4.3/5
+Passenger #01 Chennai-Bangalore Madurai-Bangalore
+467 Save details
+7h 30m . via HOSUR
+5W Lower berth 6th of Jan, 2024 6th of Jan, 2024
+A/C Sleeper ₹ 978
+Full name *
+12 seats available ₹ 716
+Enter the name
+Check bus ticket status
+Valid till 10th March Upto 10% cashback available
+Age *
+PNR no Mobile no. Email-ID
+Enter the age
+Enter PNR number Check
+Buses from AM - PM
+Select Gender *
+Male Female Other 20:30 - 05.45 4.5/5
+5 AM
+467
+6h 30m . via HOSUR Bus time table
+“The What?” The Tamil Nadu state government’s official public transportation app offers
+Passenger #02 A/C Sleeper ₹ 978
+services for commuters to purchase bus tickets online to travel within and Save details
+Looking for next bus?
+5W Lower berth
+12 seats available ₹ 716
+Get local bus timings
+ beyond Tamil Nadu.
+
+
+between cities in your state. TNSTC app?
+Full name *
+Valid till 10th March Upto 10% cashback available
+Enter the name
+We attempted to understand this app to identify the problem areas and find
+relevant opportunities for design interventions. 20:30 - 05.45 Age * 4.5/5
+Popular destination
+467
+6h 30m . via HOSUR From Chennai
+Enter the age
+A/C Sleeper ₹ 978
+process: redesign
+Bangalore Pondicherry Madurai
+Select Gender * 12 seats available ₹ 716
+Starting from ₹399 Starting from ₹245 Starting from ₹399
+Male Female Other
+12 buses 18 buses 12 buses
+Valid till 10th March Upto 10% cashback available
+₹ 1,080 Amount
+Tax included
+View more Top Offers
+20:30 - 05.45 4.5/5
+467
+6h 30m . via HOSUR
+Proceed to pay
+Use the code,
+ Use the code,
+
+A/C Sleeper ₹ 978
+get upto 10% get upto 10%
+cashback cashback
+12 seats available ₹ 716
+For first-time users For first-time users
+Valid till 10th March Valid till 10th March
+Valid till 10th March Upto 10% cashback available
+FIRST FIRST
+20:30 - 05.45 4.5/5
+467
+View more 6h 30m . via HOSUR What’s new
+A/C Sleeper ₹ 978
+Lost your luggage? Refer & Earn!
+12 seats available ₹ 716
+Insure your trip against
+ Exciting rewards are only
+
+cancellations and accidents! a tap away!
+Valid till 10th March Upto 10% cashback available
+View more Bus reviews
+Seat Time Time Sort by Filter
+Bus type: Ultra deluxe Bus type: Blue bird
+Reviewed by Rajesh Reviewed by Vinoth
+2 months ago 6 months ago
+From Chaos to Creation
+My design
+
+process
+Journey map Hi-Fi Wireframe Iterate
+Persona
+
+Information
+ Branding, UI design system,
+
+& scenario
+architecture UI components
+Quality
+checking
+User Interface
+ Development
+
+Discover Define Dream Design
+design Hand-Off
+Interactive
+ Secondary
+ User
+
+Competitor
+ Paper
+
+research flows prototype
+analysis wireframe
+Visual Design Primary Research:
+ Story telling
+User, Stakeholders
+
+Interviews
+TNSTC stands for Tamil Nadu State Transport Corporation Limited. It is a
+Understanding TNSTC
+state-owned public transport corporation responsible for operating bus
+services in Tamil Nadu, India. It was formed in 1972 by merging the various
+regional state transport corporations that were operating in Tamil Nadu at
+that time.
+
+
+The objective of TNSTC is to provide safe, reliable, and affordable public
+bus transportation services to the people of Tamil Nadu, India.
+21,000 2.2 crore 90%
+Buses Passengers TN population
+“Make TNSTC buses affordable, people-centered and primary mode of
+Secondary research
+transport for everyone in Tamil Nadu”.
+Vision
+The Tamil Nadu State Transportation Corporation is the sole public transport
+provider in Tamil Nadu, serving urban, semi-urban, rural areas for people with
+varying socio-economic background.
+Mission
+Provide people-centered (quality efficient, Commuter responsive service planning and
+01 02
+integrated and safe) services. promotion
+Optimize resources used and their build Adopt environment-friendly and
+03 04
+capacity sustainable practices.
+Strengthen commuter feedback Increase efficiency in operations and
+05 06
+mechanism. administration.
+Evolve effective mechanism to monitor Ensure inter-agency coordination and
+07 08
+service performance. multi-modal integration
+Implement Intelligent Transport System to
+Promote research on urban transport. 10 09
+improve the quality of service.
+Extend travel concession to the weaker Act as an agent for cultural synthesis and
+11 12
+sections of the society. national integration.
+Key performance indicator
+Ticket booking process Customer support Easy ticket cancellation
+Make the ticket booking process Gauge overall user satisfaction by Priorities a smooth ticket
+user friendly collecting feedback and providing cancellation process
+immediate support
+App updation Smooth onboarding Real-time update
+Indicates user appreciation for Emphasizes a smooth onboarding Implement GPS integration for live
+improvements and new features. through a verified user registration bus location updates and estimated
+process. arrival times.
+Ecosystem mapping
+The ecosystem map is a synthetic representation capturing all the key roles that have an influence on
+What?
+the user, organization and service environment.
+Uncover existing gaps and identify valuable opportunities for synergies.
+Why?
+Existing app
+No option for
+mobile, email and
+social media login.
+One-way or return No onboarding
+option is confusing. screens found.
+Quick search is
+Features are not
+non existing,
+driven by one
+feature
+thumb rule
+prioritization is
+needs to be
+addressed.
+Outdated design.
+Inappropriate
+No option for
+alignment 40% of
+mobile, email or
+the screen is not
+social media login.
+used. Secondary
+CTA is not evident. There is no tab bar
+for bottom
+navigation.
+No proper No intuitive date Exact fare is not
+grouping noted. and place change mentioned.
+option
+No timer available No offers or
+discounts session
+available.
+Information and
+the overall screen
+looks clumsy. Fare split up and
+details is not
+shown. Information are
+confined to 10% of
+the screen
+SWOT analysis for Market research
+Strength Weakness
+Wide network and extensive buses O perational inefficiencies and cost concerns
+E stablished brand recognition and trust A ging buses and maintenance challenges
+G overnment support and subsidies L imited technology adoption and user experience
+P resence in diverse segments C ompetition from private players and ride-hailing apps
+(ordinary, express, etc.)
+Opportunities Threats
+G rowing urban population and travel demand I ncreasing competition from private players
+R ising fuel costs and operational expenses G overnment initiatives like Smart Cities Mission and focus on
+public transport
+S hifting user preferences towards personalized and convenient
+P otential for modernization and technology adoption
+travel options
+E conomic slowdown and impact on passenger spending
+Competitor Analysis
+What works What works What works
+B us ratings & reviews V irtual travel agent assistance V oice search for booking
+B oarding point directions Travel insurance comparison M ulti-destination trip planning
+B us cancellation insurance I nteractive travel map A I travel assistant
+V irtual bus boarding pass M ulti-city trip planning L ocal experience booking
+M ulti-language support D estination safety ratings S ecret deals for members
+R eal-time traffic updates Travel bucket list creation S ocial media travel sharing
+B us schedule customization L uggage insurance C ashback reward for spending
+B us age information D elay predict notification
+I n-app chat support G roup travel planning tools
+What doesn’t work What doesn’t work What doesn’t work
+B us partner profiles AR destination exploration Travel itinerary sharing
+Weather alerts and bus routes Travel memory scrapbook Weather forecast integration
+B us-to-train transfer Travel language translation tool S mart packing list suggestion
+Travel health and safety alerts L anguage translator for local
+R eal-time currency converter E co-friendly travel options
+Wide range of economic background
+Primary research
+Target audience
+1 5 - 25 age: Students and working professionals
+2 5 - 45 age: Professionals, local vendors and travellers
+3 0 - 55 age: Travel for leisure, shopping, and visiting relatives.
+55 - 65 age: Senior citizens and retired employees
+Both rural and urban sector
+To understand the commuter behaviour, we have conducted an online survey of 46
+Quantitative research - Surveys
+respondents. The survey way conducted from 7th December to 21st December 2023.
+How often do you use the TNSTC app for booking bus How satisfied are you with the overall ease of use of the
+tickets or planning travel? TNSTC app?
+10%
+10%
+20%
+5%
+Never Dissatisfied
+10%
+30% User group
+ User group
+ Rarely (once a month or less) Could be better
+Occasional (once a week) Neutral
+100% 100%
+55%
+Frequently (daily) Satisfied
+60%
+How difficult is it to find the information you need on the How often do you experience technical issues while
+TNSTC app (e.g., bus schedules, fares, amenities)? using the TNSTC app (e.g., crashes, slow loading times)?
+10%
+40% 5%
+Difficult Frequently
+25%
+20% User group
+ User group
+ Neutral Occasionally
+Easy Rarely
+100% 100%
+Very easy Never
+5%
+30% 65%
+Wh ich of the following features would be most helpful to How likely are you to recommend the TNSTC app to
+you in the TNSTC app (select all that apply)? others?
+10% 10%
+5% 5%
+Real-time bus tracking Somewhat unlikely
+20% 20% User group
+ User group
+ Live updates on delays and cancellations Neutral
+Cashless payment options Somewhat likely
+100% 100%
+Multi-modal trip planning Very likely
+65% 65%
+We covered the travel experience of every user group to
+Qualitative research - Personas
+understand and empathize with them better
+Meet the user 01
+22 years Priya, college student
+Priya is a busy college student who juggles studies, part-time work, and social life. She
+relies on public transport to get around Chennai, particularly TNSTC buses, for their
+affordability and extensive network.
+Travels to other city twice a month Uses mobile app Tech savvy
+PA I N P O I N T S G OA L S
+Purchase tickets on the go and avoid Waiting in long queues, especially during
+queues at bus stations.
+
+ peak hours, is frustrating and time-
+consuming.
+
+
+Know exactly when the bus will arrive
+to minimize waiting time.
+
+ Inaccurate or unavailable bus arrival
+information leads to unnecessary waiting
+Secure preferred seats, especially for and missed connections.
+
+
+long journeys.
+
+
+“TNSTC buses are my ride, but queues kill my
+Feeling uncomfortable and unsafe due to
+vibe. I need an app that's fast, reliable, and Get real-time updates on delays and overcrowded buses, especially during rush
+alternative routes. hour.
+
+ gets me there on time – no drama, just
+smooth sailing through Chennai!”
+Difficulty securing preferred
+seats, especially for long journeys.
+Meet the user 02
+38 years Jeevan, Sales person
+Jeevan is a professional who commutes daily to his office in Chennai using TNSTC
+buses. He values efficiency and punctuality due to his busy schedule. He uses his
+smartphone for various tasks, including managing his commute.
+Travels to other city every week Uses mobile and website Tech savvy
+PA I N P O I N T S G OA L S
+Reach his destination without delays or Delays and unpredictable arrival times
+disruptions.
+
+ disrupt his schedule and cause
+frustration.
+
+
+Have access to basic amenities like air
+conditioning and clean seats.
+
+ Lack of proper air conditioning and
+cleanliness make journeys less pleasant.
+
+
+Stay updated on routes, fares, and
+schedules readily.
+
+ Difficulty accessing accurate information
+“I want an app that gets me to meetings on
+about routes, fares, and timetables.
+
+
+Use cashless payment options for faster time, no sweat. Think live bus tracking, comfy
+transactions. Inconvenience of carrying cash and
+seats (AC, please!), and info at my fingertips.
+waiting in queues for tickets.
+This app better be my commute BFF!”
+Meet the user 03
+58 years Meena, retired teacher
+Meena is a retired teacher who enjoys using public transport, especially TNSTC buses,
+for their affordability and accessibility. She is comfortable using technology but
+prioritizes ease of use and clear instructions.
+Travels to other city once a month Uses website Non - tech savvy
+PA I N P O I N T S G OA L S
+N avigate the app without confusion Com plex menus and unclear instructions
+and purchase tickets quickly.
+
+ make the app challenging to navigate.
+
+
+Have access to priority boarding and No priority boarding or seating options for
+designated seating for senior citizens.
+
+ senior citizens.
+
+
+Easily use cash or preferred cashless Difficulty using cashless payment
+payment methods.
+
+ methods, often relying on cash.
+
+
+"TNSTC app needs bigger buttons, clear steps,
+and cash options. Senior seats and easier bus Have access to proper infrastructure
+Lack of proper infrastructure and facilities
+and assistance when needed. stops would make my journeys safer and more for senior citizens at bus stops.
+enjoyable."
+User journey map
+A user journey map is a diagram that depict the stages users go through when interacting with a product
+What?
+or a service
+It helps us understand the journey of the user’s experience with a product or a service across all
+Why?
+touchpoints.
+Downloaded TNSTC App
+
+Automatically enter as a
+ No colour scheme is
+ Clear input to
+
+from the Playstore
+Guest followed Book, Cancel, View ticket
+No prompt to login/signup UI looks out of control Heads to booking ticket
+☹️ 👎 🙂
+No details about cancellation or Check bus details - boarding
+ Information is too
+
+refund policies points, route info, amneties cluttered
+No update on app No details to be found Unintuitive
+👴🏻 😧 😕
+Selected the desired seat and
+ Searching for UPI payment
+ Entered Debit card
+
+confirmed it option details
+Couldn’t find what are all
+ Doesn’t support UPI
+ Accepts only Debit/Credit
+
+😨 😒 😏 the seat I selected or Wallet cards
+Had to repeat the entire
+ Had to check back to see if
+ Got logged out, during
+
+process payment got through payment transaction
+Waste of time Oh it did not, Phew Bug
+Payment successful.
+ 🤬 🤔 😠
+But not happy with the
+
+booking on app experience.
+Personalization Trust worthy
+Design direction
+We create solutions keeping focus Builds confidence, drives adoption,
+Approaches
+on the users and their needs in strengthens brand, for smoother,
+each phase of the design process. reliable journeys.
+Accessibility and Inclusivity Information Transparency
+Empowers users, reduces
+Reaches all type of passengers,
+frustration, builds trust, for
+promotes equity, expands user
+informed travel decisions and a
+base, strengthens social impact.
+stress-free ride.
+Efficient onboarding
+User friendly
+Quicker user engagement, reduces
+Simplifies travel booking, reduces
+friction, boosts app usage for
+stress, attracts new users, and
+seamless travel experience.
+retains existing ones, for happier
+passengers and a thriving public
+transport system.
+We covered the travel experience of every user group to understand and
+Information Architecture
+empathize with them better
+Splash screen
+Onboarding
+Mobile or email signup and verification
+Home screen More Bus details My bookings
+Select location Bus information(Price, Profile settings List of upcoming and past
+location, time, date, seat bookings
+availability, route, bus type,
+Input fields(Date & no. of Help & support amenities, reviews)
+person) Real-time bus tracking with
+estimated arrival time
+Travel preferences Offers ongoing
+Search for bus availability
+Option to cancel ticket
+Bus status Date & Location selected (subject to policy)
+Recent search
+Offers & Rewards Filter/sort by History of bookings
+Bus status
+Booking history Top rated buses
+Time table of bus arrivals
+Luggage & ticket insurance Search by time
+Top rated theatre
+Terms & Condition
+Top destination with price
+FAQ
+New features available
+Refund policy Booking process
+Bus reviews
+Logout
+Seat selection
+Pickup and drop off point
+selection
+Passenger details (name,
+contact information, total
+amount)
+Secure payment gateway
+with various options (cards,
+wallets and other)
+Offer and coupons availabile
+Booking confirmation screen
+with ticket details and PNR
+number
+We covered the travel experience of every user group to
+Wireframes
+understand and empathize with them better
+Ideation
+Home
+TNSTC buses
+Logout
+TNSTC buses
+Notification Book your bus ticket
+Book your bus ticket
+From
+Search for pickup
+From
+location
+To
+Reverse location
+Search for destination
+Select the date
+To
+location FEB
+
+18 19 20 21
+2024
+Mon Tues Wed Thurs
+Select the date
+FEB
+ How many passengers?
+Calender 18 19 20 21 February
+2024
+Mon Tues Wed Thurs Home - Date picker
+mo tu we th fr sa su search bus availability
+Input field of
+
+How many passengers? 1 2 3 4 5
+number of passengers Recent searches
+6 7 8 9 10 11 12
+Chennai Bangalore Chennai Pondicherry
+search bus availability 6th of Jan, 2024 20th of Dec, 2023
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+Recent searches
+Check bus ticket status
+27 28 29 30
+Chennai Bangalore Chennai Pondicherry PNR no. Mobile no. Email-ID
+Personalised recent searches
+6th of Jan, 2024 20th of Dec, 2023 18 / 02 / 2024 Set Date
+Enter PNR number Check
+Home Bookings Help Account
+Bus time table
+Check bus ticket status
+Looking for next bus?
+TNSTC buses Get local bus timings
+
+PNR no. Mobile no. Email-ID
+between cities in your state.
+Bus ticket status
+Enter PNR number Check Book your bus ticket
+Popular destination
+From
+From Chennai
+Bus time table
+To
+Bangalore Pondicherry Madurai
+Looking for next bus?
+Home - Passenger count
+Starting from ₹399 Starting from ₹245 Starting from ₹399 Get local bus timings
+
+Time table Select the date
+12 buses 18 buses 12 buses between cities in your state.
+FEB
+
+18 19 20 21
+2024
+Mon Tues Wed Thurs
+Top Offers View more
+How many passengers?
+Popular destination
+Use the code,
+ Use the code,
+
+get upto 10% get upto 10%
+From Chennai
+cashback cashback search bus availability
+Who’s travelling? For first-time users For first-time users
+Valid till 10th March Valid till 10th March
+FIRST Adults FIRST
+Recent searches - + 1
+Madurai Bangalore Pondicherry Age 13 or above
+Destination
+Chennai Bangalore Chennai Pondicherry Children
+- + 0 Starting from ₹399 Starting from ₹245 Starting from ₹399
+Age under 12 6th of Jan, 2024 20th of Dec, 2023 What’s new View more
+12 buses 18 buses 12 buses
+Lost your luggage? Refer & Earn!
+Insure your trip against
+ Exciting rewards are only
+
+Check bus ticket status cancellations and accidents! a tap away!
+View more Top Offers PNR no. Mobile no. Email-ID
+Enter PNR number Check
+Use the code,
+ Use the code,
+
+Home Bookings Help Account
+get upto 10% get upto 10% Bus reviews View more
+cashback Offers and discounts cashback
+For first-time users For first-time users Bus time table
+Valid till 10th March Valid till 10th March
+FIRST FIRST
+Looking for next bus?
+Search for the place Get local bus timings
+
+between cities in your state.
+Search for location
+View more What’s new
+Bus type: Ultra deluxe Bus type: Blue bird Bus type: A/C seater
+Reviewed by Rajesh Reviewed by Vinoth Reviewed by Mukesh
+Popular destination
+2 months ago 6 months ago 10 months ago
+Recent searches Lost your luggage? Refer & Earn!
+From Chennai
+Insure your trip against
+ Exciting rewards are only
+ New features
+Chennai cancellations and accidents! a tap away!
+Bangalore Pondicherry Madurai
+Bangalore
+Home - City search Starting from ₹399 Starting from ₹245 Starting from ₹399
+18 buses 12 buses 12 buses
+All cities
+Andhra Pradesh A A
+View more Bus reviews
+Top Offers View more
+Arunachal Pradesh A
+Use the code,
+ Use the code,
+
+Assam A get upto 10%
+get upto 10%
+cashback cashback
+For first-time users For first-time users Bangalore B
+Valid till 10th March Valid till 10th March
+FIRST FIRST
+Bihar B
+Chattisgarh C
+What’s new View more
+Chattisgarh C Bus type: Ultra deluxe Bus type: Blue bird Bus type: A/C seater
+Reviewed by Rajesh Reviewed by Vinoth Reviewed by Mukesh Lost your luggage? Refer & Earn!
+Chattisgarh Bus review C
+2 months ago 6 months ago 10 months ago Exciting rewards are only
+ Insure your trip against
+
+a tap away! cancellations and accidents!
+Chattisgarh C
+Chattisgarh C
+Tab bar
+Chattisgarh Home Bookings Help Account C
+Bus reviews View more
+Seat selection
+Bus availability
+Bus type: Ultra deluxe Bus type: Blue bird Bus type: A/C seater
+Reviewed by Rajesh Reviewed by Vinoth Reviewed by Mukesh
+2 months ago 6 months ago 10 months ago
+Chennai Bangalore
+FEB
+
+15 Time: 20:30 to 05:45 SAT Chennai Bangalore
+FEB
+
+15 SAT 24 buses available
+Available Selected Filled
+Pick up and drop off point
+View more Top Offers
+Lower berth Upper berth
+A B C D
+Use the code,
+ Use the code,
+
+get upto 10% get upto 10%
+11 12 Chennai Bangalore FEB
+
+cashback cashback
+1 2
+15 SAT Time: 20:30 to 05:45 For first-time users For first-time users
+Valid till 10th March Valid till 10th March
+13 14
+FIRST FIRST
+Available Selected Filled
+3 4
+15 16
+Top rated buses Lower berth Upper berth
+A B C D 17 18
+4.5/5 4.5/5
+20:30 20:30 05.45 05.45 5 6
+467 467
+6h 30m . 32 seats available 6h 30m . via HOSUR 11 12
+18 20 1 2
+₹ 1,367 A/C Sleeper ₹ 1,367
+A/C Sleeper
+₹ 1,086 i 32 seats available ₹ 1,086 7 8
+21 22 13 14
+Valid till 10th March Upto 10% cashback available
+3 4 23 24 Select pickup & drop-off points
+15 16
+9 10
+4.5/5 4.3/5
+20:30 21:15 04.46 05.45
+467 467
+6h 30m . 32 seats available 7h 30m . via HOSUR
+Pick - up Destination
+17 18
+₹ 1,367 A/C Seater ₹ 978
+5 6 A/C Sleeper
+#1 5A #2 6B Selected Seat
+₹ 1,086 i 12 seats available ₹ 716
+Chennai 18 20
+Amount Valid till 10th March Upto 10% cashback available
++ ₹ 1,080
+Tax included
+7 8
+Confirm
+Adyar - 10.10 AM Buses from AM - PM 21 22
+A
+Adyar - 10.10 AM 4.5/5 4.5/5
+20:30 05:15 05.45 14.30 5 AM
+467 467
+6h 30m . 32 seats available 8h 30m . via HOSUR 23 24
+9 10 Adyar - 10.10 AM
+₹ 1,367 Non A/C Seater ₹ 465
+A/C Sleeper Coupons and offers
+Adyar - 10.10 AM ₹ 1,086 i 32 seats available ₹ 399
+Valid till 10th March Adyar - 10.10 AM Upto 10% cashback available Selected Seat:
+Pay ₹ 1,080
+Adyar - 10.10 AM #1 5W #2 5W Chennai Bangalore
+4.3/5 05:30 14.45
+467
+7h 30m . via HOSUR
+Adyar - 10.10 AM
+Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45 Fare: ₹ 1,080
+A/C Seater Proceed to pay ₹ 978
+Chennai - Adyar Bangalore - Electronic City
+i 12 seats available ₹ 716
+A/C Sleeper
+Valid till 10th March 2 seats - Lower berth 5A, 6B Upto 10% cashback available View more
+4.5/5 4.5/5 20:30 05:45 05.45 15.05
+467 467 Passenger information
+Have a coupon code? 6h 30m . 32 seats available 8h 30m . via HOSUR
+₹ 1,367 Non A/C Seater ₹ 465
+A/C Sleeper Enter code Apply
+₹ 1,086 i 32 seats available ₹ 399
+Passenger information
+Valid till 10th March Upto 10% cashback available
+Chennai Bangalore
+Insurance coverage
+Terms & Conditions 4.5/5 4.3/5
+20:30 06:15 05.45 04.46
+467 467 Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45
+6h 30m . 32 seats available 7h 30m . via HOSUR
+Chennai - Adyar Bangalore - Electronic City Yes protect my trip at ₹42 (2 passengers)
+₹ 1,367 A/C Seater ₹ 978
+A/C Sleeper
+A/C Sleeper
+₹ 1,086 i 12 seats available ₹ 716
+No, I would like to proceed without insurrance 2 seats - Lower berth 5A, 6B
+View more
+Valid till 10th March Upto 10% cashback available
+Details of primary contact 4.5/5 4.5/5
+Get Guanteed Refund 20:30 06:27 05.45 14.30
+467 467 Your ticket details will be sent to?
+Valid till 4 hours before departure 6h 30m . 32 seats available 8h 30m . via HOSUR
+₹ 1,367 Non A/C Seater ₹ 465
+A/C Sleeper
+Email ID Full refund for ₹70 per passenger
+₹ 1,086 i 32 seats available ₹ 399
+Enter your E-mail address
+Valid till 10th March Upto 10% cashback available
+No, I don’t want refund gaurantee
+Mobile number Country
+Enter your mobile number +91
+Refund Policy Cancellation Policy
+Seat Time A/C Sort by Filter
+Send booking details on Whatsapp On
+Total amount to be paid
++ ₹ 988
+Tax included
+Send booking details through SMS On
+Proceed to pay
+Passenger information
+E - Ticket
+Passenger #01
+Save details
+Payment method
+5W Lower berth
+Successful!
+Full name *
+Enter the name Pay ₹ 988
+07:18
+Chennai Bangalore
+Your E-ticket
+Age *
+Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45
+Confirmed, 18 March 2024, 8:00 AM Enter the age 2 seats
+Chennai - Adyar Bangalore - Electronic City
+From To A/C Sleeper
+Via Hosur Select Gender
+* Chennai Bangalore 2 seats - Lower berth 5A, 6B
+View more
+Male Female Other
+Starting Bus-point Ending Bus-point
+Electronic City Adyar Pay through UPI
+Passenger #02
+Google Pay Save details
+Boarding time: 08:31 Arriving time: 13:31 6W Lower berth
+Phone Pe
+Bus details:
+ Ticket number:
+ Full name
+*
+Amazon Pay STC A/C sleeper 13526174567
+Enter the name
+Razo Pay
+Seat details: Lower - 5A, 6 B PNR number: 135
+Age *
+Enter the age
+Pay offline
+Download Invoice Book return ticket
+Pay to the cleaner
+You can pay with the cash y showing the ticket
+Select Gender *
+Male Female Other
+Pay through card
+Use a Credit / Debit card
+Visa, Master Card and more
+Amount
++ ₹ 1,080
+Tax included
+Pay through net Banking Proceed to pay
+Net banking payment
+All major banks are available
+Pay later Download ticket
+Use the code “Simpl”
+Use this code to get upto Rs 75
+Share ticket with your friends
+Pay through Wallet money
+Paytm
+Amazon pay
+We evaluated our designs internally with proven practices to measure
+UI Design
+their effectiveness in regards to credibility and usability. The resultant
+Visual Design
+was a cohesive experience ecosystem around that felt curated, usable
+and useful for users.
+
+
+The value add we brought in was with an intuitive and interactive
+regionalized experience, faster way of exploring content and easy to use
+interface that gave a feeling of personalized experience and interface in
+Mobile app.
+Plus Jakarta Sans is a modern, clean, and highly readable font, making it ideal for our
+Typeface
+transportation app's interface. Its excellent legibility ensures easy navigation and
+access to information without strain. However, English is also widely used, especially in
+urban areas and among the younger population. Plus Jakarta Sans supports various
+languages, including Tamil and English.
+Aa Aa
+title
+TNSTC Heavy Trusted by customers, loved by clients
+
+subtext Experience the new TNSTC app!
+TNSTC Medium
+Aa Aa
+title
+TNSTC Bold Trusted by customers, loved by clients
+
+subtext
+Experience the new TNSTC app! TNSTC Regular
+Slate green symbolizes environmental responsibility, comet adds a Color
+modern touch, while tuna, sky, sand, and terracotta colors offer a
+harmonious blend of earthy tones for the TNSTC bus booking app,
+aligning with eco-friendly travel and user trust.
+Primary Color Palette
+Slate Come
+Green t
+Secondary Color Palette
+Tun Sk Terrac San
+a y otta d
+Icons were created in linear form with thick, solid lines to seamlessly Iconography
+accompany labels in UI.
+Design delivery
+We maintained the right balance of colors and
+elements making them look impressive and clickable.
+A simplified homepage loads with clear and clean
+information laid out as per the priority that a user
+needs.
+Home screen Bus availability Seat selection Passenger detail
+9:41 9:41 9:41 9:41
+15 FEB 15 FEB Chennai -Bangalore Chennai -Bangalore Passenger information
+TNSTC 24 buses available Time: 20:30 to 05:45 Chennai - Bangalore SATURDAY SATURDAY
+Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45
+View more Top Offers Book your bus ticket Chennai - Adyar Bangalore - Electronic City
+Available Selected Selected
+A/C Sleeper
+Chennai Use the code,
+ Use the code,
+
+From
+2 seats - Lower berth 5A, 6B Tambaram View more
+get upto 10% get upto 10%
+Lower berth Upper berth
+cashback cashback
+For first-time users For first-time users Bangalore
+To Valid till 10th March Valid till 10th March
+Details of primary contact Koramangala
+A B C D Your ticket details will be sent to?
+FIRST FIRST
+Select the date
+11 12
+15 FEB 1 2
+Enter your E-mail address 18 19 20 Top rated buses
+SATURDAY
+Mon Tues Wed
+13 14
+4.5/5 20:30 - 05.45 +91 Enter your mobile number How many passengers?
+467 6h 30m . via HOSUR 3 4
+1 Adult, 2 Children 15 16
+A/C Sleeper Send booking details on Whatsapp ₹ 978
+17 18 12 seats available ₹ 716
+Send booking details through SMS Search for buses
+5 6
+Valid till 10th March 19 20 Upto 10% cashback available
+Passenger information
+Recent searches
+7 8 21 22
+4.3/5 21:15 - 05.45
+Passenger #01 Chennai-Bangalore Madurai-Bangalore
+467 7h 30m . via HOSUR Save details
+5W Lower berth 6th of Jan, 2024 6th of Jan, 2024
+23 24
+A/C Sleeper ₹ 978 9 10
+Full name *
+12 seats available ₹ 716
+Enter the name
+Check bus ticket status
+Valid till 10th March Upto 10% cashback available
+Age *
+PNR no Mobile no. Email-ID
+Selected Seat #1 5A #2 5A Enter the age
+Check Enter PNR number
+Buses from AM - PM
+Select Gender *
+Amount ₹ 1,080 Male Female Other
+4.5/5 20:30 - 05.45 5 AM
+Tax included 467
+6h 30m . via HOSUR Bus time table
+A/C Sleeper Passenger #02 ₹ 978 Confirm
+Save details Looking for next bus?
+5W Lower berth 12 seats available
+₹ 716
+Get local bus timings
+
+between cities in your state.
+Full name *
+Valid till 10th March Upto 10% cashback available
+Enter the name
+4.5/5 Age * 20:30 - 05.45 Popular destination
+467 6h 30m . via HOSUR
+From Chennai
+Enter the age
+A/C Sleeper ₹ 978
+Bangalore Pondicherry Madurai
+Select Gender * 12 seats available ₹ 716
+Starting from ₹399 Starting from ₹245 Starting from ₹399
+Male Female Other 12 buses 18 buses 12 buses
+Valid till 10th March Upto 10% cashback available
+₹ 1,080 Amount
+Tax included View more
+Top Offers 4.5/5 20:30 - 05.45
+467 6h 30m . via HOSUR
+Proceed to pay Use the code,
+ Use the code,
+
+A/C Sleeper ₹ 978 get upto 10% get upto 10%
+cashback cashback 12 seats available ₹ 716
+For first-time users For first-time users
+Valid till 10th March Valid till 10th March
+Valid till 10th March Upto 10% cashback available
+FIRST FIRST
+4.5/5 20:30 - 05.45
+467 View more 6h 30m . via HOSUR What’s new
+A/C Sleeper ₹ 978
+Lost your luggage? Refer & Earn!
+12 seats available ₹ 716
+Insure your trip against
+ Exciting rewards are only
+
+cancellations and accidents! a tap away!
+Valid till 10th March Upto 10% cashback available
+View more Bus reviews
+Seat Time Time Sort by Filter
+Bus type: Ultra deluxe Bus type: Blue bird
+Reviewed by Rajesh Reviewed by Vinoth
+2 months ago 6 months ago
+Offer screen Payment screen E-ticket
+9:41 9:41 9:41
+Passenger information Pay ₹ 988
+Successful! 07:18
+Chennai - Bangalore Chennai - Bangalore
+Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45 Mon, 18 Mar . 20:30 Mon, 19 Mar . 05.45 Your E-ticket
+Chennai - Adyar Bangalore - Electronic City Chennai - Adyar Bangalore - Electronic City
+2 seats Confirmed, 18 March 2024, 8:00 AM
+A/C Sleeper A/C Sleeper
+2 seats 2 seats - Lower berth 5A, 6B - Lower berth 5A, 6B View more View more
+Have a coupon code? Have a coupon code?
+Via Hosur Chennai Bangalore
+Apply Enter code Google Pay
+Starting Bus-point Ending Bus-point
+Phone Pe
+Adyar Electronic City
+Insurance coverage Terms & Conditions
+Amazon Pay
+Yes protect my trip at ₹42 (2 passengers) Arriving time: 13:31
+Boarding time: 08:31 Razo Pay
+Send booking details through SMS
+Bus details Ticket number
+Pay offline STC A/C sleeper 13526174567
+Get Guanteed Refund
+Valid till 4 hours before departure Pay to the cleaner
+You can pay with the cash y showing the ticket
+Seat details: Lower - 5A, 6 B PNR number: 135
+Full refund for ₹70 per passenger
+No, I don’t want refund gaurantee Pay through card
+Your QR Code
+Use a Credit / Debit card
+You can pay with the cash y showing the ticket Refund Policy Cancellation Policy
+₹ 1,080 Amount Pay through net Banking
+Tax included
+Net banking payment
+All major banks are available
+Proceed to pay Download Invoice Book return ticket
+Pay later
+Download ticket
+Use the code “Simpl”
+Use this code to get upto Rs 75
+Share ticket with your friends
+Pay through Wallet money
+Paytm
+Amazon pay
+Learning
+This project taught me that meaningful design begins by listening
+deeply - not just to users, but to context. Research shaped every
+decision, and empathy guided every screen.

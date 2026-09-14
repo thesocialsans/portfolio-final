@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
+import SiteMascot from '../components/SiteMascot'
 import portfolioText from '../assets/images/home-portfolio-text.png'
 import sangFigure from '../assets/images/home-sang.png'
 import diamondImage from '../assets/images/home-diamond.png'
@@ -48,6 +49,7 @@ function Home() {
       <div className="site-fixed-footer site-fixed-footer--transparent">
         <SiteFooter />
       </div>
+      <SiteMascot />
     </div>
   )
 }

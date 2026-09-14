@@ -256,6 +256,10 @@
   border-radius: 2px;
 }
 
+.about-divider--footer {
+  margin-top: 128px;
+}
+
 .about-pullquote {
   margin: 40px 0;
   font-family: var(--font-serif);
@@ -276,7 +280,7 @@
 }
 
 .about-signoff {
-  margin-top: 64px;
+  margin-top: 128px;
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(16px, 3vw, 24px);

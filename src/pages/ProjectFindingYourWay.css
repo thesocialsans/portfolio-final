@@ -1,0 +1,307 @@
+.fy-page {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-neutra);
+  padding-bottom: clamp(120px, 14vw, 170px);
+  container-type: inline-size;
+}
+
+/* ---------- Reveal-on-scroll ---------- */
+.fy-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fy-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Hero (centered spread, not full-bleed) ---------- */
+.fy-hero {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 962px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 140px var(--edge-inset-x) 80px;
+  background: #ffffff;
+}
+.fy-hero__role {
+  margin: 0;
+  color: var(--fy-tuna);
+  font-family: var(--font-neutra);
+  font-size: 14px;
+}
+.fy-hero__title {
+  margin: 0;
+  color: var(--fy-tuna);
+  font-family: var(--font-neutra);
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.2;
+}
+.fy-hero__subtitle {
+  margin: 0;
+  color: var(--color-ink-soft);
+  font-family: var(--font-neutra);
+  font-size: clamp(16px, 2vw, 20px);
+}
+.fy-hero__timeline {
+  margin-top: 8px;
+}
+.fy-hero__timeline p {
+  margin: 0;
+  font-size: 15px;
+}
+.fy-hero__timeline-label {
+  color: var(--color-ink-soft);
+  margin-bottom: 4px !important;
+}
+.fy-hero__image {
+  display: block;
+  width: 100%;
+  max-width: 924px;
+  height: auto;
+  margin: 8px 0 0;
+  border-radius: 8px;
+}
+
+/* ---------- Section shell (mirrors the Payroll case-study grid) ---------- */
+.fy-section {
+  max-width: 962px;
+  margin: 0 auto;
+  padding: 48px var(--edge-inset-x);
+  border-top: 1px solid rgba(28, 28, 30, 0.08);
+}
+.fy-section:first-of-type {
+  border-top: none;
+}
+.fy-eyebrow {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--fy-title);
+  margin: 0 0 28px;
+}
+.fy-eyebrow-small {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--fy-comet);
+  margin: 0 0 8px;
+}
+.fy-italic-head {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--fy-comet);
+  margin: 40px 0 14px;
+}
+.fy-italic-head:first-of-type {
+  margin-top: 0;
+}
+.fy-section__intro {
+  max-width: 72ch;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--fy-comet);
+  opacity: 0.9;
+  margin: 0 0 24px;
+}
+
+h3, h4 {
+  font-family: var(--font-name);
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+p {
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+.fy-section p:last-of-type {
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.55;
+}
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Overview / What-Why fact lists ---------- */
+.fy-overview__facts dt,
+.fy-whatwhy dt {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--fy-comet);
+  margin-top: 20px;
+}
+.fy-overview__facts dt:first-child,
+.fy-whatwhy dt:first-child {
+  margin-top: 0;
+}
+.fy-overview__facts dd,
+.fy-whatwhy dd {
+  margin: 4px 0 0;
+  font-size: 15px;
+  max-width: 78ch;
+}
+
+/* ---------- Vision (secondary research label + quote/body) ---------- */
+.fy-vision {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 32px;
+  margin-top: 40px;
+  align-items: start;
+}
+.fy-vision__label .fy-italic-head {
+  margin: 0;
+}
+.fy-vision__body blockquote {
+  margin: 0 0 14px;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--fy-comet);
+}
+.fy-vision__body p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ---------- Visuals ---------- */
+.fy-visual {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 28px 0 0;
+  border-radius: 4px;
+  border: 1px solid rgba(28, 28, 30, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.fy-visual:hover {
+  transform: translateY(-2px) scale(1.006);
+  box-shadow: 0 20px 40px rgba(28, 28, 30, 0.12);
+}
+.fy-section .fy-visual:first-child {
+  margin-top: 0;
+}
+.fy-visual--center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+}
+.fy-visual--full {
+  border: none;
+}
+
+/* ---------- Pull quote ---------- */
+.fy-pullquote {
+  max-width: 820px;
+  margin: 40px auto;
+  text-align: center;
+}
+.fy-pullquote__label {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--fy-comet);
+  margin: 0 0 16px;
+}
+.fy-pullquote blockquote {
+  margin: 0;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--fy-comet);
+}
+
+/* ---------- Design process heading ---------- */
+.fy-process-label {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--fy-title);
+  margin: 0 0 8px;
+}
+.fy-process-title {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: clamp(28px, 3.6vw, 36px);
+  color: var(--color-ink-soft);
+  line-height: 1.2;
+  margin: 0 0 28px;
+}
+
+/* ---------- Reflection ---------- */
+.fy-reflection {
+  text-align: center;
+}
+.fy-reflection__label {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--fy-title);
+  margin: 0 0 32px;
+}
+.fy-reflection__box {
+  background: var(--fy-tuna);
+  border-radius: 8px;
+  padding: 44px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fy-reflection__box p {
+  color: #ffffff;
+  font-family: var(--font-name);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+.fy-reflection__rule {
+  border: none;
+  border-top: 1px solid rgba(28, 28, 30, 0.15);
+  max-width: 300px;
+  margin: 128px auto 128px;
+}
+.fy-reflection__signoff {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.75;
+  margin: 0 0 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .fy-vision {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fy-section {
+    padding: 40px var(--edge-inset-x);
+  }
+  .fy-reflection__box {
+    padding: 32px 24px;
+  }
+}

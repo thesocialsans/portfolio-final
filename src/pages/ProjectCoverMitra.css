@@ -1,0 +1,310 @@
+.cm-page {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-neutra);
+  padding-bottom: clamp(120px, 14vw, 170px);
+  container-type: inline-size;
+}
+
+/* ---------- Reveal-on-scroll ---------- */
+.cm-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.cm-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Hero (vertically centered, full viewport) ---------- */
+.cm-hero {
+  max-width: 962px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px var(--edge-inset-x) 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cm-hero__role {
+  margin: 0 0 8px;
+  font-family: var(--font-neutra);
+  font-size: 14px;
+  color: var(--color-ink-soft);
+}
+.cm-hero__title {
+  margin: 0 0 20px;
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: clamp(32px, 4.6vw, 46px);
+  line-height: 1.2;
+  color: var(--cm-purple);
+}
+.cm-hero__subtitle {
+  margin: 0 0 28px;
+  font-family: var(--font-neutra);
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--color-ink-soft);
+}
+.cm-hero__timeline p {
+  margin: 0;
+  font-size: 15px;
+}
+.cm-hero__timeline-label {
+  color: var(--color-ink-soft);
+  margin-bottom: 4px !important;
+}
+
+.cm-hero__stage {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: center;
+  gap: 48px;
+  background: linear-gradient(135deg, #d9efe9 0%, var(--cm-cream) 55%, #fbe9f7 100%);
+  border-radius: 20px;
+  padding: 40px;
+}
+.cm-hero__phone {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 260 / 300;
+  border-radius: 28px;
+  background: #0d0d0f;
+  padding: 10px;
+  box-shadow: 0 24px 48px rgba(28, 28, 30, 0.18);
+}
+.cm-hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  background: #cfe3f5;
+}
+.cm-hero__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cm-hero__brand-logo {
+  margin: 0;
+  font-family: var(--font-name);
+  font-weight: 700;
+  font-size: clamp(28px, 3.4vw, 40px);
+  letter-spacing: 0.5px;
+}
+.cm-hero__brand-cover {
+  color: var(--cm-purple);
+}
+.cm-hero__brand-mitra {
+  color: var(--cm-orange);
+}
+.cm-hero__brand-tagline {
+  margin: 0 0 20px;
+  font-family: var(--font-neutra);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--cm-orange);
+}
+.cm-hero__brand-caption {
+  margin: 0;
+  max-width: 30ch;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+/* ---------- Section shell (mirrors the Payroll case-study grid) ---------- */
+.cm-section {
+  max-width: 962px;
+  margin: 0 auto;
+  padding: 48px var(--edge-inset-x);
+  border-top: 1px solid rgba(28, 28, 30, 0.08);
+}
+.cm-section:first-of-type {
+  border-top: none;
+}
+.cm-eyebrow {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--cm-purple);
+  margin: 0 0 28px;
+}
+.cm-italic-head {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--cm-purple);
+  margin: 32px 0 12px;
+}
+.cm-italic-head:first-of-type {
+  margin-top: 0;
+}
+.cm-section__intro {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--color-ink-soft);
+  margin: 0 0 12px;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+.cm-section p:last-of-type {
+  margin-bottom: 0;
+}
+ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Visuals ---------- */
+.cm-visual {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 28px 0 0;
+  border-radius: 4px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.cm-visual:hover {
+  transform: translateY(-2px) scale(1.006);
+  box-shadow: 0 20px 40px rgba(83, 25, 101, 0.14);
+}
+.cm-section .cm-visual:first-child {
+  margin-top: 0;
+}
+/* ---------- Overview: text + poster composed side by side ---------- */
+.cm-overview {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.cm-overview__poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(83, 25, 101, 0.16);
+}
+
+/* ---------- Interaction-flow video (scaled up, aligned to section margins) ---------- */
+.cm-flow-video {
+  width: 100%;
+  margin: 32px 0 0;
+}
+.cm-flow-video__el {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background: #0d0d0f;
+}
+.cm-caption {
+  margin: 10px 0 0 !important;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 13.5px;
+  color: var(--color-ink-soft);
+}
+
+/* ---------- Impact pull quote ---------- */
+.cm-pullquote {
+  background: var(--cm-purple);
+  border-radius: 8px;
+  padding: 40px 48px;
+}
+.cm-pullquote p {
+  margin: 0;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------- Reflection ---------- */
+.cm-reflection {
+  text-align: center;
+}
+.cm-reflection__label {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--cm-purple);
+  margin: 0 0 32px;
+}
+.cm-reflection__box {
+  background: var(--color-ink);
+  border-radius: 8px;
+  padding: 44px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cm-reflection__box p {
+  color: #ffffff;
+  font-family: var(--font-name);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+.cm-reflection__rule {
+  border: none;
+  border-top: 1px solid rgba(28, 28, 30, 0.15);
+  max-width: 300px;
+  margin: 128px auto 128px;
+}
+.cm-reflection__signoff {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.75;
+  margin: 0 0 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .cm-hero__stage {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+  .cm-overview {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .cm-overview__poster {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .cm-hero__phone {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .cm-hero {
+    padding: 120px var(--edge-inset-x) 48px;
+  }
+  .cm-section {
+    padding: 40px var(--edge-inset-x);
+  }
+  .cm-reflection__box {
+    padding: 32px 24px;
+  }
+}

@@ -1,0 +1,71 @@
+Total pages: 1
+
+
+===== PAGE 1 (w=1920 h=8272) =====
+
+Sangavi Ramesh Resume Ho m e A b o u t Po r tfo l i o
+Interaction Design, Flow, Validation, Prototyping
+Interactive digital insurance ad
+experiences for engagement
+Covermitra-Interactive ad experience
+Timeline
+March 2025 (2-day deliverable at KappaX.io)
+Website
+embedded
+interactive ad
+experience
+design.
+Overview
+Brief
+Create an interactive Q&A ad experience for CoverMitra to address low engagement and high drop-offs in
+traditional insurance ads by making information clearer, structured, and easier for users to understand and act on.
+Why this matters?
+Traditional insurance ads often rely on static information. 
+They lack clarity, feel overwhelming, and fail to guide users, leading to
+high drop-offs and low conversion.
+Constrains
+Interaction limited to click-only inputs
+
+No typing, voice, or advanced interaction
+
+Had to work within ad-format limitations
+
+Designed for quick engagement and low attention span
+Understanding the Problem
+Business challenges
+Ineffective
+Low
+High drop- Lack of Poor
+communication of
+engagement
+off rates brand conversion complex
+insurance
+familiarity
+offerings
+Sangavi Ramesh Sangavi Ramesh Sangavi Ramesh Sangavi Ramesh
+Sangavi Ramesh
+User challenges
+Limited Lack of guided
+Overcrowded Difficulty in
+Low trust in
+understanding of support while
+and complex making
+digital ads insurance exploring options
+information decisions
+Sangavi Ramesh Sangavi Ramesh Sangavi Ramesh Sangavi Ramesh Sangavi Ramesh
+Concept
+Rooted from my home,
+
+Insurance decisions are often built on trust and human interaction.
+
+Traditionally, people relied on agents who explained options, answered questions, and built
+confidence over time.
+User journey
+Interaction flow
+Visual Design
+Impact
+Drove 15% lower bounce rate with guided Q/A,
+boosting clarity, trust and lead intent.
+Learning
+I learned to guide users gently, by simplifying steps, limiting
+choices and designing honest, trustful conversation.

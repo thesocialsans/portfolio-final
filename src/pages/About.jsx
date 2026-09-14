@@ -1,5 +1,6 @@
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
+import SiteMascot from '../components/SiteMascot'
 import illustration from '../assets/images/about-illustration.png'
 import profilePhoto from '../assets/images/about-profile.png'
 import groupPhoto from '../assets/images/about-group-photo.png'
@@ -162,8 +163,7 @@ function About() {
           That&rsquo;s the thread across my work, making systems work better for real life.
         </p>
 
-        <hr className="about-divider" />
-        <hr className="about-divider about-divider--small" />
+        <hr className="about-divider about-divider--footer about-divider--small" />
 
         <p className="about-signoff">
           Hyderabad, India
@@ -175,6 +175,7 @@ function About() {
       <div className="site-fixed-footer site-fixed-footer--transparent">
         <SiteFooter />
       </div>
+      <SiteMascot />
     </div>
   )
 }

@@ -18,6 +18,19 @@
   --ad-brown: #a87000;
   --ad-ink: #070707;
   --ad-cream: #f7f7f7;
+  --vote-cream: #f7f4ee;
+  --vote-ink: #1a1a1a;
+  --vote-red: #b3132a;
+  --fy-green: #558c73;
+  --fy-title: #fd2e35;
+  --fy-comet: #59597c;
+  --fy-tuna: #2f3043;
+  --fy-sky: #cadef8;
+  --fy-terracotta: #ff8e75;
+  --fy-sand: #f9e8d0;
+  --cm-purple: #531965;
+  --cm-orange: #f07c00;
+  --cm-cream: #faf6fb;
 
   /* Typography */
   --font-display: 'Quicksand', system-ui, sans-serif;

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
+import SiteMascot from '../components/SiteMascot'
 import PortfolioGrid from '../components/PortfolioGrid'
 import skylineImage from '../assets/images/portfolio-skyline.png'
 import '../styles/siteFrame.css'
@@ -52,6 +53,7 @@ function Portfolio() {
       <div className="site-fixed-footer site-fixed-footer--transparent">
         <SiteFooter onDark />
       </div>
+      <SiteMascot />
     </div>
   )
 }

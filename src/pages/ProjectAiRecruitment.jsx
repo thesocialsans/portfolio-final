@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
+import SiteMascot from '../components/SiteMascot'
+import FloatingPortfolioCTA from '../components/FloatingPortfolioCTA'
 import ProjectSectionNav from '../components/ProjectSectionNav'
 import useScrollReveal from '../hooks/useScrollReveal'
 import '../styles/siteFrame.css'
@@ -934,6 +936,8 @@ function ProjectAiRecruitment() {
       <div className="site-fixed-footer site-fixed-footer--transparent">
         <SiteFooter onDark={overHeroAtBottom} />
       </div>
+      <SiteMascot />
+      <FloatingPortfolioCTA />
     </div>
   )
 }

@@ -53,8 +53,9 @@ export const projects = [
     id: 'covermitra',
     number: '05',
     title: 'Before you need it.',
-    description: 'Making insurance easier to understand, evaluate, and navigate before a moment of need.',
-    category: 'Insurance & Service Design | 2023',
+    description:
+      'Creating a guided insurance journey where users interact with an AI-presented video to understand coverage, explore options, and make informed choices.',
+    category: 'Interactive insurance experience | 2023',
     image: bg05,
     accent: 'rgba(164, 152, 129, 0.3)',
     route: '/projects/covermitra',
