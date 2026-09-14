@@ -40,6 +40,29 @@
 }
 
 @media (max-width: 640px) {
+  /* Fixed header/footer stay position:fixed over scrolling content on every
+     page; at mobile the wrapped nav/footer rows make unreadable overlap with
+     whatever scrolls underneath far more likely, so force a legible backdrop
+     even where the desktop design is intentionally transparent. */
+  .site-fixed-header--transparent,
+  .site-fixed-footer--transparent {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .site-fixed-header--transparent .site-header__name,
+  .site-fixed-header--transparent .site-header__role,
+  .site-fixed-header--transparent .site-header__nav-item,
+  .site-fixed-footer--transparent .site-footer__locale {
+    color: var(--color-ink) !important;
+    text-shadow: none !important;
+  }
+
+  .site-fixed-footer--transparent .site-footer__social-icon {
+    filter: none !important;
+  }
+
   .site-fixed-header .site-header {
     flex-wrap: wrap;
     row-gap: 14px;

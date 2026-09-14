@@ -20,7 +20,7 @@
 .about-hero__illustration {
   position: absolute;
   left: 52.044%;
-  top: 32.28%;
+  top: 36%;
   width: 45.604%;
   height: 60.215%;
   transform: translateX(-50%);
@@ -28,6 +28,23 @@
   z-index: 1;
   pointer-events: none;
   user-select: none;
+  animation: about-hero-float 5s ease-in-out infinite;
+}
+
+@keyframes about-hero-float {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-1.2%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero__illustration {
+    animation: none;
+  }
 }
 
 .about-hero__caption {

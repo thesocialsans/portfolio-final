@@ -53,6 +53,6 @@
 
 @media (max-width: 680px) {
   .portfolio-main {
-    padding: 120px var(--edge-inset-x) 110px;
+    padding: 165px var(--edge-inset-x) 140px;
   }
 }

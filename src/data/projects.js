@@ -43,7 +43,7 @@ export const projects = [
     number: '04',
     title: 'Who are you, when you vote?',
     description:
-      'Using visual storytelling and playful interaction to encourage awareness, reflection, and more conscious choices.',
+      'Using humour and visual storytelling to encourage young voters to question, reflect, and choose consciously.',
     category: 'Editorial & Interaction Design | 2025',
     image: bg04,
     accent: 'rgba(142, 91, 60, 0.3)',

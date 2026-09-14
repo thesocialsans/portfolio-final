@@ -18,7 +18,7 @@ function Home() {
 
   return (
     <div className="home-scroll">
-      <div className="site-fixed-header">
+      <div className="site-fixed-header site-fixed-header--transparent">
         <SiteHeader activeNav="Home" />
       </div>
 
@@ -45,7 +45,7 @@ function Home() {
         <p className="home-work-label">Work 22'-26'</p>
       </main>
 
-      <div className="site-fixed-footer">
+      <div className="site-fixed-footer site-fixed-footer--transparent">
         <SiteFooter />
       </div>
     </div>

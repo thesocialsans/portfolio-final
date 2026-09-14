@@ -89,3 +89,14 @@
   color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
 }
+
+@media (max-width: 480px) {
+  .project-card__footer {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .project-card__category {
+    white-space: normal;
+  }
+}
