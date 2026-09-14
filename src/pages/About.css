@@ -20,7 +20,7 @@
 .about-hero__illustration {
   position: absolute;
   left: 52.044%;
-  top: 36%;
+  top: calc(36% - 48px);
   width: 45.604%;
   height: 60.215%;
   transform: translateX(-50%);
