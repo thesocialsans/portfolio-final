@@ -23,8 +23,8 @@ function Home() {
       </div>
 
       <main className="home-stage">
-        <img className="home-stage__layer" src={portfolioText} alt="" />
-        <img className="home-stage__layer" src={sangFigure} alt="Sangavi Ramesh illustration" />
+        <img className="home-stage__layer home-stage__portfolio-text" src={portfolioText} alt="" />
+        <img className="home-stage__layer home-stage__figure" src={sangFigure} alt="Sangavi Ramesh illustration" />
 
         {EYES.map((eye) => (
           <span

@@ -30,13 +30,18 @@
   user-select: none;
 }
 
+.home-stage__figure,
+.home-stage__portfolio-text {
+  transform: translateY(-24px);
+}
+
 .home-eye-pupil {
   position: absolute;
   z-index: 2;
   width: 1.146cqw;
   height: 1.146cqw;
   margin-left: -0.573cqw;
-  margin-top: -0.573cqw;
+  margin-top: calc(-0.573cqw - 24px);
   border-radius: 50%;
   background: #1c1c1e;
   pointer-events: none;
@@ -47,7 +52,7 @@
   position: absolute;
   left: 57.344%;
   top: 59.213%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 24px));
   margin: 0;
   z-index: 2;
   font-family: var(--font-neutra);
@@ -67,7 +72,7 @@
   display: block;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transform: translateY(-16px);
+  transform: translateY(-40px);
 }
 
 .home-diamond__image {
@@ -100,7 +105,7 @@
   position: absolute;
   left: 65.833%;
   top: 90.648%;
-  transform: translateY(calc(-100% - 58px));
+  transform: translateY(calc(-100% - 82px));
   margin: 0;
   z-index: 2;
   font-family: var(--font-neutra);
