@@ -1,0 +1,111 @@
+.site-header {
+  position: absolute;
+  left: var(--edge-inset-x);
+  right: var(--edge-inset-x);
+  top: var(--edge-inset-top);
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.site-header__name {
+  margin: 0;
+  font-family: var(--font-name);
+  font-size: 1.25cqw;
+  line-height: 1.25;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.site-header__name-first {
+  font-weight: 500;
+}
+
+.site-header__name-last {
+  font-weight: 200;
+}
+
+.site-header__role {
+  margin: 0.4cqw 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.833cqw;
+  letter-spacing: 0.115cqw;
+  color: var(--color-ink);
+  opacity: 0.5;
+  white-space: nowrap;
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.667cqw;
+}
+
+.site-header__nav-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.35cqw;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header__nav-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-neutra);
+  font-size: 0.833cqw;
+  letter-spacing: 0.089cqw;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.site-header__nav-item a {
+  transition: opacity 0.2s ease;
+}
+
+.site-header__nav-item a:hover {
+  opacity: 0.6;
+}
+
+.site-header__nav-dot {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.3cqw;
+  width: 0.417cqw;
+  height: 0.417cqw;
+  border-radius: 50%;
+  background: var(--color-accent-dot);
+}
+
+.site-header__resume {
+  display: inline-block;
+  border: none;
+  border-radius: 0.833cqw;
+  padding: 0.208cqw 0.833cqw;
+  background: var(--color-ink);
+  color: #fff;
+  font-family: var(--font-neutra);
+  font-size: 0.833cqw;
+  letter-spacing: 0.052cqw;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.site-header__resume:hover {
+  opacity: 0.8;
+}
+
+.site-header--on-dark .site-header__name,
+.site-header--on-dark .site-header__role,
+.site-header--on-dark .site-header__nav-item {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.site-header--on-dark .site-header__role {
+  opacity: 0.7;
+}

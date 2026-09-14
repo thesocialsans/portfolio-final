@@ -1,0 +1,35 @@
+:root {
+  /* Colors */
+  --color-bg: #ffffff;
+  --color-ink: #1c1c1e;
+  --color-ink-soft: #6b6b6b;
+  --color-text-muted: #8d8d8e;
+  --color-label: #9a9a9a;
+  --color-accent: #a8402a;
+  --color-accent-dot: #882a14;
+  --color-border: #e5e4e7;
+  --color-footer-text: #5a5a5f;
+  --color-body-text: #5a5a5f;
+  --color-quote-bg: #1c1c1e;
+  --color-quote-text: #f5f5f7;
+  --pr-cream: #fbf1e6;
+  --pr-navy: #14284a;
+  --pr-terracotta: #b56a3c;
+  --ad-brown: #a87000;
+  --ad-ink: #070707;
+  --ad-cream: #f7f7f7;
+
+  /* Typography */
+  --font-display: 'Quicksand', system-ui, sans-serif;
+  --font-mono: 'Syne Mono', ui-monospace, Consolas, monospace;
+  --font-name: 'Poppins', var(--font-display), sans-serif;
+  --font-neutra: 'Jost', var(--font-display), sans-serif;
+  --font-body: 'Poppins', var(--font-display), sans-serif;
+  --font-serif: 'Times New Roman', Times, serif;
+
+  /* Layout */
+  --page-max-width: 1920px;
+  --edge-inset-x: 56px;
+  --edge-inset-top: 42px;
+  --edge-inset-bottom: 42px;
+}

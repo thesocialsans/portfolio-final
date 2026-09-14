@@ -1,0 +1,330 @@
+.ad-page {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-neutra);
+  padding-bottom: clamp(120px, 14vw, 170px);
+  container-type: inline-size;
+}
+
+/* ---------- Reveal-on-scroll ---------- */
+.ad-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.ad-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Hero (single full-bleed image, text baked in — shown uncropped) ---------- */
+.ad-hero {
+  width: 100%;
+  background: var(--ad-cream);
+}
+.ad-hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Section shell ---------- */
+.ad-section {
+  max-width: 962px;
+  margin: 0 auto;
+  padding: 48px var(--edge-inset-x);
+  border-top: 1px solid rgba(28, 28, 30, 0.08);
+}
+.ad-section:first-of-type {
+  border-top: none;
+}
+.ad-eyebrow {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--ad-brown);
+  margin: 0 0 28px;
+}
+.ad-eyebrow--spaced {
+  margin-top: 56px;
+}
+.ad-italic-head {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ad-ink);
+  margin: 40px 0 14px;
+}
+.ad-italic-head:first-of-type {
+  margin-top: 0;
+}
+.ad-section__intro {
+  max-width: 72ch;
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ad-ink);
+  opacity: 0.75;
+  margin: 0 0 24px;
+}
+.ad-label {
+  font-family: var(--font-name);
+  font-weight: 600;
+  font-size: 13px;
+  margin: 18px 0 8px;
+}
+
+h3, h4 {
+  font-family: var(--font-name);
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+p {
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+ul, ol {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Overview ---------- */
+.ad-overview__facts dt {
+  font-family: var(--font-name);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ad-ink);
+  margin-top: 20px;
+}
+.ad-overview__facts dt:first-child {
+  margin-top: 0;
+}
+.ad-overview__facts dd {
+  margin: 4px 0 0;
+  font-size: 15px;
+  max-width: 78ch;
+}
+.ad-overview__visual {
+  display: block;
+  width: auto;
+  max-width: min(100%, 560px);
+  height: auto;
+  margin: 32px auto 0;
+}
+
+/* ---------- Columns ---------- */
+.ad-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 40px;
+}
+.ad-three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ---------- Images (native size, never upscaled) ---------- */
+.ad-full-image,
+.ad-process-image,
+.ad-icons-image,
+.ad-ia-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 24px;
+}
+.ad-full-image:last-child,
+.ad-ia-image:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Branding ---------- */
+.ad-branding {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.ad-branding__logo {
+  width: 140px;
+  height: auto;
+}
+.ad-swatches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.ad-swatch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.ad-swatch__chip {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.ad-swatch__chip--bordered {
+  border: 1px solid rgba(28, 28, 30, 0.2);
+}
+.ad-branding__type {
+  font-family: 'Manrope', var(--font-neutra), sans-serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* ---------- Stats ---------- */
+.ad-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 32px;
+  margin-bottom: 24px;
+}
+.ad-stat {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.ad-stat__num {
+  font-family: var(--font-name);
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--ad-brown);
+  margin: 0;
+  flex-shrink: 0;
+  min-width: 64px;
+}
+.ad-stat p {
+  font-size: 14px;
+  margin: 0;
+}
+.ad-callout {
+  padding: 20px 24px;
+  border-left: 2px solid var(--ad-brown);
+  background: rgba(168, 112, 0, 0.06);
+  font-family: var(--font-name);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* ---------- Challenges ---------- */
+.ad-challenges {
+  counter-reset: none;
+  font-family: var(--font-name);
+  font-size: 17px;
+}
+.ad-challenges li {
+  margin-bottom: 10px;
+}
+
+/* ---------- Personas / process / IA / flow images ---------- */
+.ad-process-image {
+  max-width: 900px;
+}
+
+/* ---------- Visual design screens ---------- */
+.ad-screen {
+  margin-bottom: 56px;
+}
+.ad-screen:last-child {
+  margin-bottom: 0;
+}
+.ad-screen__main {
+  display: block;
+  width: auto;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+  box-shadow: 0 20px 48px rgba(28, 28, 30, 0.12);
+}
+.ad-screen__title {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--ad-brown);
+  text-align: center;
+  margin-bottom: 14px;
+}
+.ad-annotations {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 14.5px;
+  color: var(--color-body-text);
+}
+
+/* ---------- Reflection ---------- */
+.ad-reflection {
+  text-align: center;
+}
+.ad-reflection__label {
+  font-family: var(--font-name);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--ad-brown);
+  margin: 0 0 32px;
+}
+.ad-reflection__box {
+  background: var(--ad-ink);
+  border-radius: 8px;
+  padding: 44px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ad-reflection__box p {
+  color: #ffffff;
+  font-family: var(--font-name);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .ad-hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .ad-hero__copy {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ad-two-col,
+  .ad-stats {
+    grid-template-columns: 1fr;
+  }
+  .ad-three-col {
+    grid-template-columns: 1fr;
+  }
+  .ad-branding {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .ad-section {
+    padding: 40px var(--edge-inset-x);
+  }
+  .ad-reflection__box {
+    padding: 32px 24px;
+  }
+}
