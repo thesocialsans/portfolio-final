@@ -7,9 +7,9 @@ import ProjectSectionNav from '../components/ProjectSectionNav'
 import useScrollReveal from '../hooks/useScrollReveal'
 import '../styles/siteFrame.css'
 import heroSift from '../assets/images/ai-recruitment/hero-sift.png'
+import userFlowDiagramV2 from '../assets/images/ai-recruitment/user-flow-diagram-v2.png'
 import personaMeeraPhoto from '../assets/images/ai-recruitment/persona-meera-photo.png'
 import personaSmithaPhoto from '../assets/images/ai-recruitment/persona-smitha-photo.png'
-import userFlowDiagram from '../assets/images/ai-recruitment/user-flow-diagram.png'
 import iaDiagram from '../assets/images/ai-recruitment/ia-diagram.png'
 import siftFlowDiagram from '../assets/images/ai-recruitment/sift-flow-diagram.png'
 import traditionalFlowDiagram from '../assets/images/ai-recruitment/traditional-flow-diagram.png'
@@ -621,29 +621,25 @@ function ProjectAiRecruitment() {
             through human-in-the-loop decision checkpoints with mandatory audit logging and approved
             communications.
           </p>
-          <img className="pr-user-flow-image" src={userFlowDiagram} alt="Detailed SIFT recruiter user flow diagram with decision points and end states" />
+          <img className="pr-user-flow-image" src={userFlowDiagramV2} alt="Detailed SIFT recruiter user flow diagram: candidate application, AI hard-requirement filtering, automated pre-screening, exception flagging, recruiter evaluation with request-info and override paths, message drafting with AI disclosure, and audit logging through to a final decision" />
           <div className="pr-legend">
             <p className="pr-legend__title">Legend</p>
             <div className="pr-legend__items">
               <div className="pr-legend__item">
-                <span className="pr-legend__swatch pr-legend__swatch--page" />
-                Page
-              </div>
-              <div className="pr-legend__item">
-                <span className="pr-legend__swatch pr-legend__swatch--interaction" />
-                Interaction
+                <span className="pr-legend__swatch pr-legend__swatch--startend" />
+                Start/End
               </div>
               <div className="pr-legend__item">
                 <span className="pr-legend__swatch pr-legend__swatch--decision" />
                 Decision
               </div>
               <div className="pr-legend__item">
-                <span className="pr-legend__swatch pr-legend__swatch--startend" />
-                Start/End
+                <span className="pr-legend__swatch pr-legend__swatch--interaction" />
+                AI/System Process
               </div>
               <div className="pr-legend__item">
-                <span className="pr-legend__swatch pr-legend__swatch--outside" />
-                Outside Platform
+                <span className="pr-legend__swatch pr-legend__swatch--page" />
+                Human/Message Action
               </div>
             </div>
           </div>

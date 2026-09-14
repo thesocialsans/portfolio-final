@@ -410,13 +410,6 @@ li {
   background: #f6b3ba;
   border-radius: 50%;
 }
-.pr-legend__swatch--outside {
-  background: transparent;
-  border: none;
-  border-top: 2px dotted rgba(28, 28, 30, 0.5);
-  height: 0;
-  align-self: center;
-}
 
 /* ---------- Information architecture (real exported diagram, at native resolution) ---------- */
 .pr-ia-image {
