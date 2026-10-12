@@ -53,7 +53,7 @@ function ProjectAdoptDontShop() {
       <ProjectSectionNav sections={SECTIONS} />
 
       <header className="ad-hero">
-        <img className="ad-hero__image" src={heroAdoptPhone} alt="Designing a better way to adopt pets — reducing friction in pet adoption journeys. UX Design, Research, Synthesis, Prototyping. Timeline: 1 week design case study." />
+        <img className="ad-hero__image" src={heroAdoptPhone} alt="Designing a better way to adopt pets: reducing friction in pet adoption journeys. UX Design, Research, Synthesis, Prototyping. Timeline: 1 week design case study." />
       </header>
 
       <main>
@@ -80,7 +80,7 @@ function ProjectAdoptDontShop() {
 
         <section id="process" className="ad-section ad-reveal">
           <h2 className="ad-eyebrow">My Design Process</h2>
-          <p className="ad-section__intro">Process: Modified double diamond &mdash; from chaos to creation.</p>
+          <p className="ad-section__intro">Process: Modified double diamond, from chaos to creation.</p>
           <img className="ad-process-image" src={designProcess} alt="Modified double diamond process: Discover, Define, Dream, Design, User Interface design, Development Hand-Off" />
         </section>
 
@@ -150,7 +150,7 @@ function ProjectAdoptDontShop() {
         </section>
 
         <section id="branding" className="ad-section ad-reveal">
-          <h2 className="ad-eyebrow">&ldquo;The Who?&rdquo; &mdash; Branding</h2>
+          <h2 className="ad-eyebrow">&ldquo;The Who?&rdquo; Branding</h2>
 
           <p className="ad-label">App Logo</p>
           <img className="ad-branding__logo" src={logoAdoreMate} alt="AdoreMate app logo" />
@@ -366,7 +366,7 @@ function ProjectAdoptDontShop() {
         </section>
 
         <section id="personas" className="ad-section ad-reveal">
-          <h2 className="ad-eyebrow">Qualitative Research &mdash; Personas</h2>
+          <h2 className="ad-eyebrow">Qualitative Research: Personas</h2>
           <img className="ad-full-image" src={personas} alt="Persona A, Varun Aric, Architect, age 25; Persona B, Nagashree, Dancer, age 25" />
         </section>
 
@@ -384,12 +384,12 @@ function ProjectAdoptDontShop() {
         </section>
 
         <section id="flow" className="ad-section ad-reveal">
-          <h2 className="ad-eyebrow">User Flow &mdash; App Structure</h2>
+          <h2 className="ad-eyebrow">User Flow: App Structure</h2>
           <img className="ad-full-image" src={userFlow} alt="User flow from splash screen through onboarding, login, and the five main app sections" />
         </section>
 
         <section id="wireframes" className="ad-section ad-reveal">
-          <h2 className="ad-eyebrow">Paper Wireframes &mdash; Ideation</h2>
+          <h2 className="ad-eyebrow">Paper Wireframes: Ideation</h2>
           <img className="ad-full-image" src={wireframesPaper} alt="Hand-drawn paper wireframes for the home, adopt, and shelter screens" />
           <div className="ad-screen-captions">
             <p><span className="ad-screen-captions__num">Screen 01 -</span> <span className="ad-screen-captions__name">Home</span></p>
@@ -397,7 +397,7 @@ function ProjectAdoptDontShop() {
             <p><span className="ad-screen-captions__num">Screen 03 -</span> <span className="ad-screen-captions__name">Shelter screen</span></p>
           </div>
 
-          <h2 className="ad-eyebrow ad-eyebrow--spaced">High-Fi Wireframes &mdash; Conceptualisation</h2>
+          <h2 className="ad-eyebrow ad-eyebrow--spaced">High-Fi Wireframes: Conceptualisation</h2>
           <img className="ad-full-image" src={wireframesHifi} alt="High-fidelity grayscale wireframes for the home, shelter, and adopt screens" />
           <div className="ad-screen-captions">
             <p><span className="ad-screen-captions__num">Screen 01 -</span> <span className="ad-screen-captions__name">Home</span></p>

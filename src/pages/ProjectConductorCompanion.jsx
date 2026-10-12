@@ -264,8 +264,8 @@ const STRESS = [
   ['Wrong count', '− button beside each counter; long-press counter to zero', 'Fix without starting over'],
   ['Wrong ticket already printed', 'Void last (10 s chip) or Void from history; reason required; void logged', 'Printed paper can’t be undone, but the ledger can be honest'],
   ['Destination behind the bus', 'Not shown at all (only stages ahead)', 'Prevent, don’t warn'],
-  ['Printer disconnected', 'Yellow banner with a black edge: Printer off — Reconnect. Ticket is held, not lost. Option: show e-ticket QR.', 'Passenger keeps moving; record is safe'],
-  ['Paper out mid-print', 'Paper out — load roll, then Reprint. Reprint marked DUPLICATE.', 'Prevents double counting'],
+  ['Printer disconnected', 'Yellow banner with a black edge: Printer off · Reconnect. Ticket is held, not lost. Option: show e-ticket QR.', 'Passenger keeps moving; record is safe'],
+  ['Paper out mid-print', 'Paper out: load roll, then Reprint. Reprint marked DUPLICATE.', 'Prevents double counting'],
   ['Low paper (~10%)', 'Yellow icon with a word in glance bar', 'Warn before peak, not during'],
   ['No network', 'Glance-bar icon only. Cash and Shakti tickets work fully offline and sync later.', 'Most of the work should never depend on signal'],
   ['UPI pending > 30 s / no network', 'Payment not confirmed. Options: Wait · Take cash · Record UTR & issue (flagged for depot check)', 'Honest about what isn’t confirmed; protects conductor with a record'],
@@ -516,7 +516,7 @@ function ProjectConductorCompanion() {
             <Row left={null}>
               <div className="cd-quote">
                 <p className="cd-quote__text">Whatever happens on the bus is his responsibility first.</p>
-                <p className="cd-quote__src">Sridhar, BMTC conductor &mdash; paraphrased from my notes</p>
+                <p className="cd-quote__src">Sridhar, BMTC conductor, paraphrased from my notes</p>
               </div>
             </Row>
 
@@ -1517,8 +1517,8 @@ function ProjectConductorCompanion() {
             </Row>
             <Row left={<Tag>Motion-aware input (stretch idea)</Tag>}>
               <p className="cd-text">
-                If the accelerometer detects a sharp jolt, ignore touches for a moment. Flagged as needing testing
-                &mdash; it could also block real taps.
+                If the accelerometer detects a sharp jolt, ignore touches for a moment. Flagged as needing testing; it
+                could also block real taps.
               </p>
             </Row>
           </Block>

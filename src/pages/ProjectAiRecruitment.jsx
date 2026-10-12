@@ -541,7 +541,7 @@ function ProjectAiRecruitment() {
           <h2 className="pr-eyebrow">Operational Differences</h2>
           <p className="pr-section__intro">
             This comparative matrix highlights how SIFT transforms traditional, sequential resume screening into a
-            high-throughput, exception-first workflow &mdash; replacing manual parsing, unchecked discretion, and
+            high-throughput, exception-first workflow, replacing manual parsing, unchecked discretion, and
             delayed outreach with explainable AI scoring, mandatory override rationales, and real-time equity
             safeguards.
           </p>
@@ -600,8 +600,8 @@ function ProjectAiRecruitment() {
         <section id="process-flow" className="pr-section pr-reveal">
           <h2 className="pr-eyebrow">End-to-End Decision &amp; Process Flow</h2>
           <p className="pr-section__intro">
-            This process map illustrates the architectural shift from traditional, linear FIFO screening &mdash;
-            defined by manual scanning bottlenecks and undocumented discretion &mdash; to SIFT&rsquo;s automated
+            This process map illustrates the architectural shift from traditional, linear FIFO screening,
+            defined by manual scanning bottlenecks and undocumented discretion, to SIFT&rsquo;s automated
             pre-screening loop, which filters hard requirements, surfaces AI flags to an exception-first queue, and
             enforces auditable human oversight before candidate outreach.
           </p>
@@ -675,7 +675,7 @@ function ProjectAiRecruitment() {
           <h2 className="pr-eyebrow">High-Fidelity Wireframes</h2>
           <p className="pr-section__intro">
             These high-fidelity wireframes translate the low-fidelity conceptual layouts into pixel-perfect,
-            production-ready interfaces &mdash; applying a crisp design system, real data density, and clear visual
+            production-ready interfaces, applying a crisp design system, real data density, and clear visual
             hierarchy to validate the final SIFT user experience.
           </p>
 
@@ -865,7 +865,7 @@ function ProjectAiRecruitment() {
           <h2 className="pr-eyebrow">Success Metrics &amp; Impact</h2>
           <p className="pr-section__intro">
             This framework measures SIFT&rsquo;s performance across operational efficiency, evaluation accuracy,
-            regulatory compliance, and candidate experience &mdash; demonstrating how exception-first AI design
+            regulatory compliance, and candidate experience, demonstrating how exception-first AI design
             transforms high-volume recruitment.
           </p>
           <div className="pr-table-scroll">

@@ -43,7 +43,7 @@ function ProjectCoverMitra() {
           <h1 className="cm-hero__title">
             Interactive digital insurance ad experiences for engagement
           </h1>
-          <p className="cm-hero__subtitle">Covermitra &mdash; Interactive ad experience</p>
+          <p className="cm-hero__subtitle">Covermitra: Interactive ad experience</p>
           <div className="cm-hero__timeline">
             <p className="cm-hero__timeline-label">Timeline</p>
             <p>March 2025 (2-day deliverable at KappaX.io)</p>

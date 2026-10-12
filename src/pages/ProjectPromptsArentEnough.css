@@ -390,6 +390,75 @@
   margin-top: 2px;
 }
 
+/* ---------- Added from the full SP1 write-up ---------- */
+.pa-method {
+  columns: 2;
+  column-gap: 40px;
+  padding-left: 22px !important;
+}
+.pa-method li {
+  break-inside: avoid;
+  padding-bottom: 6px;
+}
+.pa-page .pa-method__rule {
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--pa-ink);
+}
+.pa-photos--map {
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: start;
+}
+.pa-photos--map .pa-sketch img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.pa-photos--map img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.pa-photos--synth {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+.pa-photos--synth img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.pa-box--side {
+  align-self: start;
+}
+.pa-box--side .pa-mono {
+  color: var(--pa-rose);
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.pa-box--side ul {
+  list-style: disc;
+}
+.pa-cards--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.pa-page .pa-card .pa-card__i--rose {
+  color: var(--pa-rose);
+}
+.pa-card__list {
+  margin-top: 10px !important;
+  padding-left: 20px !important;
+  font-size: 13.5px;
+  display: grid;
+  gap: 6px;
+  color: var(--pa-ink);
+}
+.pa-refs {
+  list-style: disc;
+  padding-left: 20px !important;
+  display: grid;
+  gap: 6px;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+
 /* ---------- Tables ---------- */
 .pa-tw {
   overflow-x: auto;
@@ -737,6 +806,14 @@
 }
 
 @media (max-width: 760px) {
+  .pa-method {
+    columns: 1;
+  }
+  .pa-photos--map,
+  .pa-photos--synth,
+  .pa-cards--two {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .pa-row {
     grid-template-columns: minmax(0, 1fr);
   }

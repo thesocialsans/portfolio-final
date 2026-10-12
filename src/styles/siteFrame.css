@@ -1,4 +1,4 @@
-/* Shared fixed header/footer frame — used by every page so the nav and the
+/* Shared fixed header/footer frame, used by every page so the nav and the
    locale/social row stay pinned to the viewport and never scroll away. */
 
 .site-fixed-header,

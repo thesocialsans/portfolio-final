@@ -9,6 +9,10 @@ import '../styles/siteFrame.css'
 import diaryCover from '../assets/images/prompts/diary-cover.jpg'
 import diaryEntry from '../assets/images/prompts/diary-entry-18-july.jpg'
 import diaryChecklist from '../assets/images/prompts/diary-phase-checklist.jpg'
+import diaryOriginal from '../assets/images/prompts/diary-original-entry.jpg'
+import sketchMentalMap from '../assets/images/prompts/sketch-mental-map.png'
+import correctionNote from '../assets/images/prompts/correction-note.jpg'
+import synthesisMatrix from '../assets/images/prompts/synthesis-matrix.jpg'
 import sketchIceberg from '../assets/images/prompts/sketch-iceberg.png'
 import sketchLoop from '../assets/images/prompts/sketch-intent-loop.png'
 import trackingCard from '../assets/images/prompts/chatgpt-tracking-card.jpg'
@@ -76,7 +80,13 @@ const LIT_ROWS = [
 ]
 
 const TOOL_ROWS = [
-  { cells: ['ChatGPT', 'Live, twice', 'Asked 1 of 8, weeks later 3–4 of 8'] },
+  {
+    cells: [
+      'ChatGPT',
+      'Live, twice',
+      <>Asked 1 of 8, weeks later 3–4 of 8<small>not stable over time: both runs kept, dated</small></>,
+    ],
+  },
   { cells: ['Gemini', 'Live', 'Asks on open requests'] },
   {
     cells: [
@@ -183,7 +193,7 @@ const TURNS_P08 = [
     cells: [
       '3',
       'Anxiety, dependence on family, medical terms, uncertainty',
-      '—',
+      '',
       'She disclosed context she had all along',
     ],
   },
@@ -242,8 +252,8 @@ const BREAKDOWNS = [
   { cells: ['AI assumption', 'P06: silent eco default', 'Show it as a choice'] },
   { cells: ['Difficult repair', 'P08: four turns, the last one structural', 'A restructure action'] },
   { cells: ['Excessive effort', 'P06, P07, P08 re-explaining', 'Images and remembered context'] },
-  { dim: true, cells: ['Wrong interpretation', 'None: a checked null', '—'] },
-  { dim: true, cells: ['Evolving intent', 'None: a checked null', '—'] },
+  { dim: true, cells: ['Wrong interpretation', 'None: a checked null', ''] },
+  { dim: true, cells: ['Evolving intent', 'None: a checked null', ''] },
 ]
 
 const JOURNEY = {
@@ -274,62 +284,62 @@ const CONCEPTS_VISIBLE = [
   ],
   [
     concept02,
-    '02 · “Still missing” — add context in pieces',
+    '02 · “Still missing”: add context in pieces',
     'A small strip under each answer lists what’s still missing; tap to add just that piece.',
     'Reactive constraint disclosure, 6 of 8: context arrived only when an answer exposed its absence.',
     'fewer full-prompt rewrites per task?',
-    'Pencil sketch: “Still missing” — add context in pieces',
+    'Pencil sketch of “Still missing”: add context in pieces',
   ],
   [
     concept03,
-    '03 · “Reading it as…” — make the guess visible',
+    '03 · “Reading it as…”: make the guess visible',
     'A dismissible chip names the AI’s reading before it answers, with other directions one tap away.',
     '4 of 8 silent professional defaults (P05–P08), and 0 clarifying questions.',
     'A/B against the silent default on design and research tasks',
-    'Pencil sketch: “Reading it as…” — make the guess visible',
+    'Pencil sketch of “Reading it as…”: make the guess visible',
   ],
   [
     concept04,
-    '04 · “Not that — more like this”',
+    '04 · “Not that, more like this”',
     'Tap the phrase or block that’s wrong; two buttons appear right there. No new paragraph.',
     'Every real repair was already contrastive: “not obviously eco”, “don’t introduce new component types”.',
     'repair turns vs typed corrections',
-    'Pencil sketch: “Not that — more like this”',
+    'Pencil sketch of “Not that, more like this”',
   ],
 ]
 
 const CONCEPTS_CHEAP = [
   [
     concept05,
-    '05 · “Split it” — structural repair by hand',
+    '05 · “Split it”: structural repair by hand',
     'Drag a generated block into two, the way you’d ungroup sticky notes.',
-    'P08’s decisive fix was structural: “separate what the elderly user does from what the caregiver does” — typed as prose.',
+    'P08’s decisive fix was structural, typed as prose: “separate what the elderly user does from what the caregiver does”.',
     'on journey and layout tasks, where structure is the fix',
-    'Pencil sketch: “Split it” — structural repair by hand',
+    'Pencil sketch of “Split it”: structural repair by hand',
   ],
   [
     concept06,
-    '06 · “Show, don’t tell” — images as input',
+    '06 · “Show, don’t tell”: images as input',
     'A dropped reference image carries the same weight as a typed sentence.',
     'P06: “Showing it a reference or moodboard would be much easier than trying to explain the feeling.”',
     'reference images vs verbal contrastive repair, on visual tasks',
-    'Pencil sketch: “Show, don’t tell” — images as input',
+    'Pencil sketch of “Show, don’t tell”: images as input',
   ],
   [
     concept07,
-    '07 · “Remember this?” — context that persists',
+    '07 · “Remember this?”: context that persists',
     'When a correction sounds like a standing rule, one tap keeps it for next time.',
     'P07 and P08 each asked for it unprompted: the component library, the persona “once”.',
     'does it cut first-turn assumption errors?',
-    'Pencil sketch: “Remember this?” — context that persists',
+    'Pencil sketch of “Remember this?”: context that persists',
   ],
   [
     concept08,
-    '08 · “What got you there” — learn from your own fix',
+    '08 · “What got you there”: learn from your own fix',
     'After a multi-turn fix, a small recap shows first vs final message, the difference underlined.',
-    'P04 named “a lack of knowledge in how to prompt” — he edits output in email instead of refining in chat.',
+    'P04 named “a lack of knowledge in how to prompt”; he edits output in email instead of refining in chat.',
     'does in-chat refinement increase over sessions?',
-    'Pencil sketch: “What got you there” — learn from your own fix',
+    'Pencil sketch of “What got you there”: learn from your own fix',
   ],
 ]
 
@@ -341,6 +351,241 @@ const SOON = [
     'Visible assumptions against today’s silent default, measured by first-turn errors and repair turns.',
   ],
   ['Implement', '6 · Refine and hand off', 'What survives testing, and how it would ship.'],
+]
+
+const SCOPE_ROWS = [
+  { cells: ['UX and product designers, mixed AI experience', 'Designing a new AI product (that’s SP2)'] },
+  { cells: ['Real, professional tasks', 'Voice and multimodal (text only)'] },
+  { cells: ['General-purpose chat assistants', 'Model internals'] },
+  { cells: ['The full multi-turn conversation', 'Claims about “designers in general”'] },
+]
+
+const METHOD_PHASES = [
+  'Frame the problem',
+  'Literature review',
+  'Conceptual framework',
+  'Product audit',
+  'Research design',
+  'Task study',
+  'Post-task interviews',
+  'Raw dataset',
+  'First-order coding',
+  'Affinity map',
+  'Intent–expression gap',
+  'Breakdown framework',
+  'Interaction journey',
+  'Synthesis',
+  'Design opportunities',
+]
+
+const DEFINITION_CARDS = [
+  ['23 July', 'How does it end?', 'In convergence, or in abandonment. Giving up and doing it yourself is a real ending too.'],
+  [
+    '26 July',
+    'Convergence is not repair',
+    'You can repair five times and never converge, so the interview asked “how did you know it was done?” on its own.',
+  ],
+  [
+    '23 July',
+    'Intent-aware interaction',
+    'A property of the interaction, not the model alone. A strong model behind an interface that hides its guesses still fails, so a designer can help.',
+  ],
+]
+
+const PAPERS = [
+  { cells: ['Amershi et al., Guidelines for Human-AI Interaction', 'CHI', '18 system-side guidelines'] },
+  { cells: ['Li, Vorvoreanu, DeBellis, Amershi, factorial surveys', 'Microsoft / Purdue', '1,000+ participants test them'] },
+  { cells: ['Bertao & Joo, “Hey Alexa, would you create a color palette?”', 'Survey, 123 designers', 'Familiarity lowers resistance'] },
+  { cells: ['Li et al., UX professionals’ perceptions of GenAI', 'CHI ’24', 'Careers, not mechanics'] },
+  { cells: ['Chatterji et al., How People Use ChatGPT', 'NBER, 2025', 'Writing dominates work use'] },
+  { cells: ['Wang et al., zero-shot clarifying question generation', 'WWW ’23', 'Asking, in search only'] },
+  { cells: ['Bi, Ai & Croft, clarifying questions from negative feedback', 'ICTIR ’21', 'After “no”, ask differently'] },
+  { hl: true, cells: ['Zamfirescu-Pereira et al., Why Johnny Can’t Prompt', 'CHI ’23', 'Closest to my premise'] },
+  { cells: ['Schulhoff et al., The Prompt Report', 'Survey', 'A glossary, not evidence'] },
+  { cells: ['Vanderlyn, Väth & Vu, mental models, adaptive agent', 'Stuttgart', 'Contradictory beliefs'] },
+]
+
+const INTENT_STATES = [
+  { cells: ['Latent', 'Anchored: expectations exist before use'] },
+  { cells: ['Expressed', 'Anchored: matches the Prompt Report'] },
+  { cells: ['AI-interpreted', 'Anchored: “don’t say X” ignored (Johnny)'] },
+  { hl: true, cells: ['Evaluated', 'A gap: no paper isolates the noticing moment'] },
+  { cells: ['Negotiated', 'Hypothesis only'] },
+  { cells: ['Converged', 'My own concept'] },
+]
+
+const LOCKED_PROMPTS = [
+  { cells: ['1 Explicit', '“Rewrite this paragraph to be more concise: [text]”'] },
+  { hl: true, cells: ['2 Ambiguous', '“Can you help me with this presentation?”'] },
+  { cells: ['3 Implicit', '“Make this email sound better”'] },
+  { cells: ['4 Context', 'Audience set early, then a dependent ask'] },
+  { cells: ['5 Evolving', 'Goal pivoted mid-conversation'] },
+  { cells: ['6 Misread', 'Vague, with a plausible wrong reading'] },
+  { cells: ['7 Correction', '“That’s not what I meant”, nothing more'] },
+  { cells: ['8 Multi-turn', 'A task needing 3–4 exchanges'] },
+]
+
+const ROUND_ONE = [
+  { hl: true, cells: ['ChatGPT', '1', '5 yes · 2 partial · 1 no'] },
+  { cells: ['Gemini', '6', '3 yes · 4 open · 1 in progress'] },
+  { cells: ['Claude', '3', 'Mostly yes or tentative'] },
+  { cells: ['Copilot', '4', '3 yes · 3 not yet · 1 tentative · 1 gradual'] },
+]
+
+const WHO_TOOK_PART = [
+  { cells: ['8 designers from my network', 'A convenience sample, stated plainly'] },
+  { cells: ['Spread of seniority', 'Juniors and seniors differ (UX professionals’ perceptions)'] },
+  { cells: ['Spread of AI familiarity', 'Habits shape comfort (Bertao & Joo)'] },
+  { cells: ['Verbal consent script', 'A small pilot, not a formal IRB process'] },
+]
+
+const SESSION_STEPS = [
+  { cells: ['Consent and framing', '2'] },
+  { cells: ['Task with think-aloud', 'The rest of the session'] },
+  { cells: ['Post-task questions', '8'] },
+  { cells: ['Close', '2'] },
+]
+
+const POST_TASK_QUESTIONS = [
+  'What were you actually trying to achieve?',
+  'What did you expect the AI to understand?',
+  'When did you realise it had misunderstood you?',
+  'Why did you change your prompt at that point?',
+  'What did you add that wasn’t in your first attempt?',
+  'How did you know it was done, or good enough?',
+  'What would have made this easier?',
+]
+
+const SHEET_FIELDS = [
+  'Actual goal',
+  'Initial prompt',
+  'AI interpretation',
+  'AI response',
+  'User reaction',
+  'Mismatch',
+  'Repair',
+  'Final intent',
+  'Convergence',
+]
+
+const ACCOUNTS = [
+  [
+    'P01 · design student',
+    'What he wrote on his sheet',
+    'Goal: “To write an effective mail.” Response: “The first one is longer (unnecessary). The second and final one is good to go.” Mismatch: “The initial response was longer than expected.” Repair: “Successfully.” Final intent: “Achieved.”',
+  ],
+  [
+    'P02',
+    'A useful negative case',
+    'One long prompt with a car-buying analogy, one long answer, no repair. He uses AI for research only, never for designing, and has no ChatGPT account of his own.',
+  ],
+  [
+    'P03',
+    'Why it worked first time',
+    'He uses ChatGPT Pro, personalised over months to his own thinking and design process. An outlier caused by personalisation, not a baseline.',
+  ],
+  [
+    'P04',
+    'Re-prompting wasn’t in his toolkit',
+    'He saw his first prompt was vague only after reading the answer. Usually he edits the output in email instead of refining in the chat. He named “a lack of knowledge in how to prompt”.',
+  ],
+]
+
+const TURNS_P05 = [
+  { cells: ['1', 'Asked for pain points and opportunities; got themes, then features straight away'] },
+  { cells: ['2', '“No solutions yet”: a problem and cause table'] },
+  { cells: ['3', 'Separate what users said from the AI’s interpretation: usable'] },
+]
+
+const TURNS_P06 = [
+  { cells: ['1', '“…premium sustainable skincare brand… natural, sophisticated and modern.”', '“It looks like every sustainable skincare brand.”'] },
+  { cells: ['2', '“I don’t want it to look obviously eco-friendly…”', '“Better, but it’s becoming too cold.”'] },
+  { hl: true, cells: ['3', '“…add warmth and some imperfection.”', '“This is much closer.”'] },
+]
+
+const TURNS_P07 = [
+  { cells: ['1', '“Design a dashboard for a finance app…”', '“This wouldn’t fit our product.”'] },
+  { cells: ['2', '“Make it more enterprise… not every section a separate card.”', ''] },
+  {
+    hl: true,
+    cells: [
+      '3',
+      '“Use an 8 point grid, 4px spacing increments, 8px corner radius… Don’t introduce new component types.”',
+      '“Closer to something I could actually take into Figma.”',
+    ],
+  },
+]
+
+const AFFINITY = [
+  { cells: ['Intent formulation', 'Every goal existed before the first word'] },
+  { cells: ['Prompt expression', 'Vagueness is invisible while typing'] },
+  { cells: ['Context', 'Supplied on demand, when an answer exposed its absence'] },
+  { cells: ['Ambiguity', 'Each misreading was a reasonable majority reading'] },
+  { cells: ['AI assumptions', 'Fired once, on the first prompt, never recurred'] },
+  { cells: ['Mismatch', 'A fit problem, not an accuracy problem'] },
+  { cells: ['Repair', 'Format-only and substance-redirecting repairs differ'] },
+  { cells: ['Convergence', 'A statable checklist, or a felt match'] },
+  { cells: ['Intent evolution', 'Honest null: the goal never changed'] },
+  { cells: ['Cognitive effort', 'Honest null: nothing measured, three complaints'] },
+]
+
+const CANDIDATES = [
+  { cells: ['P01', 'Too long → shortened', 'No: never touched intent'] },
+  { cells: ['P04', 'Table only → reformatted', 'No: content never wrong'] },
+  { cells: ['P05', 'Solutions too early → problems', 'Same shape as P07, and recalled'] },
+  { hl: true, cells: ['P06', 'Eco cliché → contrast', 'Selected'] },
+  { hl: true, cells: ['P07', 'Off-system → spec list', 'Selected'] },
+  { hl: true, cells: ['P08', 'Accessibility only → two actors', 'Selected'] },
+]
+
+const SYNTHESIS = [
+  { cells: ['How is intent expressed?', 'One front-loaded ask, rarely with the criteria that decide success'] },
+  { cells: ['How much is implicit?', 'Norms, stage, aesthetic, relationships: it depends on the task'] },
+  { hl: true, cells: ['How does intent change?', 'It doesn’t. It is disclosed in stages.'] },
+  { cells: ['Why refine?', 'A plausible-but-wrong answer makes the gap nameable'] },
+  { cells: ['How is a miss detected?', 'Immediately, before they can say why'] },
+  { cells: ['How do people repair?', 'Format-only · substance-redirecting · structural'] },
+  { cells: ['What do assumptions cost?', 'Notice → diagnose → state: three steps forced on the user'] },
+  { cells: ['When do users feel understood?', 'A checklist (P01–P04) or a felt match (P05–P08)'] },
+  { cells: ['What effort is unnecessary?', 'Re-explaining, with language as the only channel'] },
+]
+
+const FRAMEWORK = [
+  { cells: ['P01', 'Explicit', 'Near-complete', 'Stable', 'Low (1)'] },
+  { cells: ['P02', 'Explicit', 'Complete', 'Stable', 'None (0)'] },
+  { cells: ['P03', 'Explicit', 'Complete', 'Stable', 'None (0)'] },
+  { cells: ['P04', 'Implicit', 'Incomplete', 'Stable', 'Low–medium (2)'] },
+  { cells: ['P05', 'Implicit', 'Incomplete', 'Stable', 'Medium (2)'] },
+  { cells: ['P06', 'Implicit', 'Incomplete', 'Stable', 'Medium (2)'] },
+  { cells: ['P07', 'Implicit', 'Incomplete', 'Stable', 'Medium (2)'] },
+  { cells: ['P08', 'Implicit', 'Incomplete', 'Stable', 'High (3 + structural)'] },
+]
+
+const CONTRIBUTION = [
+  { cells: ['HCI research', 'The missing half: how people express, notice and repair'] },
+  { cells: ['AI product teams', 'Fit, not accuracy: surfacing the frame is a design lever'] },
+  { cells: ['Designers', 'Names what we leave unsaid because it feels obvious'] },
+  { cells: ['Method', 'Predictions written in advance, sources labelled, nulls reported'] },
+]
+
+const SP2_PLAN = [
+  { cells: ['Assumption chip vs silent default', 'A real repair-effort measure'] },
+  { cells: ['Persistent context profile', 'More people, more tools'] },
+  { cells: ['Reference-image input', 'Exploratory tasks'] },
+  { cells: ['A restructure action', 'A row for “silent refusal”'] },
+]
+
+const REFERENCES = [
+  'Amershi et al. Guidelines for Human-AI Interaction. CHI.',
+  'Li, Vorvoreanu, DeBellis, Amershi. Assessing Human-AI Interaction Early through Factorial Surveys.',
+  'Bertao, Joo. “Hey Alexa, Would You Create a Color Palette?”',
+  'Li et al. UX Professionals’ Perceptions of GenAI. CHI ’24.',
+  'Chatterji et al. How People Use ChatGPT. NBER, 2025.',
+  'Schulhoff et al. The Prompt Report.',
+  'Wang et al. Zero-shot Clarifying Question Generation. WWW ’23.',
+  'Bi, Ai, Croft. Asking Clarifying Questions Based on Negative Feedback. ICTIR ’21.',
+  'Zamfirescu-Pereira et al. Why Johnny Can’t Prompt. CHI ’23.',
+  'Vanderlyn, Väth, Vu. Users’ mental models and an adaptive dialog agent.',
 ]
 
 function Row({ left, children, stack = false }) {
@@ -429,7 +674,7 @@ function Quote({ children, who, small = false }) {
   return (
     <div className="pa-quote">
       <p className={`pa-quote__text${small ? ' pa-quote__text--sm' : ''}`}>{children}</p>
-      <p className="pa-quote__who">{who}</p>
+      {who && <p className="pa-quote__who">{who}</p>}
     </div>
   )
 }
@@ -587,6 +832,27 @@ function ProjectPromptsArentEnough() {
                 </ol>
               </div>
             </Row>
+            <Row left={<p className="pa-note pa-note--sky">Cut from the first draft</p>}>
+              <p className="pa-body">
+                “Is there a type of person who’s better at this?” I had no honest method to answer it, so it went.
+              </p>
+            </Row>
+            <Row left={<p className="pa-note">Scope, 27 July</p>}>
+              <div className="pa-flow">
+                <Table head={['In scope', 'Deliberately out']} rows={SCOPE_ROWS} />
+                <p className="pa-cap">Writing the negative space clarified more than the scope did.</p>
+              </div>
+            </Row>
+            <Row left={<p className="pa-note">Method: fifteen phases, one rule</p>}>
+              <div className="pa-box">
+                <ol className="pa-method">
+                  {METHOD_PHASES.map((phase) => (
+                    <li key={phase}>{phase}</li>
+                  ))}
+                </ol>
+                <p className="pa-method__rule">One rule across all fifteen: no fabricated data.</p>
+              </div>
+            </Row>
           </Block>
 
           <Block>
@@ -636,7 +902,44 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:3 A prompt is not the intent behind it" />}>
+            <Row left={<Head phase="Empathize" title="1:3 The question underneath" />}>
+              <p className="pa-body">
+                “Is the AI misunderstanding me, or am I just bad at saying what I actually want? Or is that gap
+                itself the interesting thing to study?” I chose to study the gap.
+              </p>
+            </Row>
+            <div className="pa-photos pa-photos--map">
+              <figure className="pa-fig pa-sketch">
+                <img
+                  src={sketchMentalMap}
+                  alt="Pencil flow: me, a goal in my head; try to put it in words; prompt; the AI reads it literally; leaves stuff out because it felt obvious and fills gaps with its own assumptions; both lead to a mismatch"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  My first mental map, redrawn in pencil: then, “ugh, not what I meant”. Try again, but how?
+                </figcaption>
+              </figure>
+              <figure className="pa-fig">
+                <img
+                  src={diaryOriginal}
+                  alt="The original handwritten diary entry of 18 July: a flow from a goal to a prompt to a mismatch, ending: try again, but how?"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>The original entry, 18 July</figcaption>
+              </figure>
+            </div>
+            <Row left={<p className="pa-note">A bias I named early, 19 July</p>}>
+              <p className="pa-body">
+                I kept taking the user’s side. So I wrote it down: the point is to study the gap, not to build a case
+                against the AI.
+              </p>
+            </Row>
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Empathize" title="1:4 A prompt is not the intent behind it" />}>
               <div className="pa-body">
                 <p>
                   Everyone, me included, used “prompt” and “intent” as one word. Separating them shaped the whole
@@ -672,10 +975,19 @@ function ProjectPromptsArentEnough() {
                 <figcaption>Intent communication as a loop, held as a hypothesis to test</figcaption>
               </figure>
             </div>
+            <div className="pa-cards">
+              {DEFINITION_CARDS.map(([date, title, text]) => (
+                <div className="pa-card" key={title}>
+                  <p className="pa-card__i">{date}</p>
+                  <h3>{title}</h3>
+                  <p style={{ marginTop: 6 }}>{text}</p>
+                </div>
+              ))}
+            </div>
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:4 What research already knew" />}>
+            <Row left={<Head phase="Empathize" title="1:5 What research already knew" />}>
               <p className="pa-body">
                 I read ten papers in full rather than skimming twenty, across human–AI interaction, conversational UX,
                 clarifying questions, prompting and mental models. Two areas, cognitive load and trust, stayed thin,
@@ -705,6 +1017,13 @@ function ProjectPromptsArentEnough() {
                 </p>
               </div>
               <div className="pa-card">
+                <h3>Zero-shot clarifying questions</h3>
+                <p className="pa-muted">WWW ’23, ICTIR ’21</p>
+                <p style={{ marginTop: 8 }}>
+                  Systems can ask good clarifying questions, but only studied in search, from the system’s side.
+                </p>
+              </div>
+              <div className="pa-card">
                 <h3>Mental models</h3>
                 <p className="pa-muted">188 dialogs</p>
                 <p style={{ marginTop: 8 }}>
@@ -718,15 +1037,78 @@ function ProjectPromptsArentEnough() {
                 isn’t.
               </Quote>
             </Row>
+            <Row left={<p className="pa-note">The ten papers, 30 July – 21 August</p>}>
+              <Table head={['Paper', 'Venue', 'What it gave me']} rows={PAPERS} />
+            </Row>
+            <Row left={<p className="pa-note pa-note--sky">Depth over count</p>}>
+              <p className="pa-body">
+                Ten papers read fully, not fifteen to twenty padded ones. Two were scanned PDFs, read page by page as
+                images. Cognitive load stayed empty and trust only partly filled: named as gaps, not filled with weak
+                papers.
+              </p>
+            </Row>
+            <div className="pa-photos pa-photos--synth">
+              <figure className="pa-fig">
+                <img
+                  src={correctionNote}
+                  alt="Handwritten reading note: a paper first rated High relevance, crossed out and downgraded to Medium, with a research problem boxed"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  A correction I made, 19 August: rated “High” from its title, downgraded to “Medium” once read. Never
+                  rate relevance off a title.
+                </figcaption>
+              </figure>
+              <figure className="pa-fig">
+                <img
+                  src={synthesisMatrix}
+                  alt="The handwritten synthesis matrix of the ten papers with highlighted cells"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>The synthesis matrix, 21 August</figcaption>
+              </figure>
+              <div className="pa-box pa-box--side">
+                <p className="pa-mono">Johnny, Amershi, mental models</p>
+                <ul>
+                  <li>Non-experts generalise from one try and avoid examples.</li>
+                  <li>Stating capability alone can inflate expectations unless paired with its limits.</li>
+                  <li>Users disagree on the “right” way to talk to a system (188 dialogs).</li>
+                </ul>
+              </div>
+            </div>
+            <Row left={<p className="pa-note">Conceptual framework, 22 August: each intent state checked against the reading</p>}>
+              <Table head={['Intent state', 'Evidence status']} rows={INTENT_STATES} />
+            </Row>
+            <Row left={<p className="pa-note pa-note--sky">The open fork, 22 August</p>}>
+              <p className="pa-body">
+                Does a general-purpose assistant ask, or guess? The literature couldn’t say, so the product audit had
+                to test it.
+              </p>
+            </Row>
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:5 Testing the tools first" />}>
+            <Row left={<Head phase="Empathize" title="1:6 Testing the tools first" />}>
               <p className="pa-body">
                 The reading left one question open: when a request is unclear, does a general assistant ask, or
                 guess? I wrote eight locked prompts, from clear (“make this paragraph concise”) to vague (“Can you
                 help me with this presentation?”), and ran exactly the same eight on every tool, logging each run by
                 hand.
+              </p>
+            </Row>
+            <Row left={<p className="pa-note">Eight locked prompts, the same for every tool, 23 August</p>}>
+              <Table head={['Scenario', 'Locked test prompt']} rows={LOCKED_PROMPTS} />
+            </Row>
+            <Row left={<p className="pa-note">Round one: 32 runs, real counts</p>}>
+              <Table head={['Tool', 'Asked (of 8)', 'Converged']} rows={ROUND_ONE} />
+            </Row>
+            <Row left={<p className="pa-note pa-note--sky">Scenario 2, “Can you help me with this presentation?”</p>}>
+              <p className="pa-body">
+                ChatGPT guessed a kind of help and never converged. Gemini and Copilot asked what help was needed.
+                Claude was self-tested in a chat that carried the project’s history, so its row is not a zero-context
+                test.
               </p>
             </Row>
           </Block>
@@ -752,7 +1134,7 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:6 Eight designers, their own real work" />}>
+            <Row left={<Head phase="Empathize" title="1:7 Eight designers, their own real work" />}>
               <div className="pa-body">
                 <p>
                   Then the people. Each designer did a real task of their own, on the tool they already use, thinking
@@ -783,6 +1165,45 @@ function ProjectPromptsArentEnough() {
                 </ul>
               </div>
             </Row>
+            <Row left={<p className="pa-note">Who took part, 25–29 August</p>}>
+              <Table head={['Decision', 'Why']} rows={WHO_TOOK_PART} />
+            </Row>
+            <Row left={<p className="pa-note">The session, about 27 minutes</p>}>
+              <div className="pa-flow">
+                <Table head={['Step', 'Minutes']} rows={SESSION_STEPS} />
+                <p className="pa-cap">
+                  The invite promised 20–25 minutes, so I trimmed questions rather than run over.
+                </p>
+              </div>
+            </Row>
+            <div className="pa-cards">
+              <div className="pa-card">
+                <h3>Seven post-task questions</h3>
+                <ol className="pa-card__list">
+                  {POST_TASK_QUESTIONS.map((q, i) => (
+                    <li key={q}>{i === 0 ? <b>{q}</b> : q}</li>
+                  ))}
+                </ol>
+              </div>
+              <div className="pa-card">
+                <h3>The sheet each person filled</h3>
+                <p className="pa-muted">Phase 08 · raw dataset template</p>
+                <ol className="pa-card__list">
+                  {SHEET_FIELDS.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ol>
+              </div>
+              <div className="pa-card">
+                <h3>Predictions, written before the calls</h3>
+                <p style={{ marginTop: 8 }}>UX (P05, P08): a workflow-stage gap. P05 matched, P08 adjacent.</p>
+                <p style={{ marginTop: 8 }}>Visual (P06): tacit aesthetic, refined by contrast. Matched.</p>
+                <p style={{ marginTop: 8 }}>UI (P07): unstated design-system rules. Matched.</p>
+                <p style={{ marginTop: 10, fontWeight: 600 }}>
+                  Three hits with nuance out of four, not a clean sweep.
+                </p>
+              </div>
+            </div>
             <figure className="pa-fig">
               <img src={p01Sheet} alt="P01’s handwritten session sheet, name covered" loading="lazy" decoding="async" />
               <figcaption>P01’s own session sheet, filled in by hand during the session · name covered</figcaption>
@@ -826,7 +1247,7 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:7 What they actually typed" />}>
+            <Row left={<Head phase="Empathize" title="1:8 What they actually typed" />}>
               <p className="pa-body">
                 Three in-person sessions, word for word from the exported chats and screenshots. Spelling is kept as
                 typed.
@@ -853,7 +1274,24 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Empathize" title="1:8 Three critical incidents" />}>
+            <Row left={<Head phase="Empathize" title="1:9 In their own account" />}>
+              <p className="pa-body">
+                What each in-person participant told me afterwards changed how I read their session.
+              </p>
+            </Row>
+            <div className="pa-cards pa-cards--four">
+              {ACCOUNTS.map(([who, title, text]) => (
+                <div className="pa-card" key={who}>
+                  <p className="pa-card__i">{who}</p>
+                  <h3>{title}</h3>
+                  <p style={{ marginTop: 6 }}>{text}</p>
+                </div>
+              ))}
+            </div>
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Empathize" title="1:10 Three critical incidents" />}>
               <p className="pa-body">
                 The four phone sessions were craft tasks. Each one ended with the same question: tell me about a time
                 it got you wrong.
@@ -877,6 +1315,26 @@ function ProjectPromptsArentEnough() {
               <p className="pa-muted">P08 · an elderly patient’s hospital-booking journey · from call notes</p>
             </div>
             <Table head={['Turn', 'Her prompt', 'Her reaction', 'What it tells me']} center={[0]} rows={TURNS_P08} />
+            <div>
+              <p className="pa-ttl">P05 · UX designer · phone, 7 Sep · recalled from memory</p>
+              <p className="pa-muted">Synthesis of 8 user interviews · paraphrased, the weakest data in the set</p>
+            </div>
+            <Table head={['Turn', 'What happened']} center={[0]} rows={TURNS_P05} />
+            <div>
+              <p className="pa-ttl">P06 · visual designer · phone, 9 Sep · call notes</p>
+              <p className="pa-muted">Premium sustainable skincare</p>
+            </div>
+            <Table head={['Turn', 'Her prompt', 'Her reaction']} center={[0]} rows={TURNS_P06} />
+            <div>
+              <p className="pa-ttl">P07 · UI designer · phone, 11 Sep · call notes</p>
+              <p className="pa-muted">Enterprise finance dashboard</p>
+            </div>
+            <Table head={['Turn', 'His prompt', 'His reaction']} center={[0]} rows={TURNS_P07} />
+            <Row left={<p className="pa-note">P05 and P08: two UX designers, same probes</p>}>
+              <p className="pa-body">
+                Both distrust AI synthesis without checking the source. Both saw it narrow the problem too early.
+              </p>
+            </Row>
           </Block>
 
           <Block>
@@ -920,6 +1378,24 @@ function ProjectPromptsArentEnough() {
             <p className="pa-cap">
               P01–P04 from recordings and exports · P05 from recall · P06–P08 from call notes · one coder
             </p>
+            <div className="pa-cards pa-cards--two">
+              <div className="pa-card">
+                <p className="pa-card__i pa-card__i--rose">The finding that surprised me most</p>
+                <h3>0 of 8 on real work</h3>
+                <p style={{ marginTop: 6 }}>
+                  On real work the AI never once asked. Yet on the audit’s deliberately ambiguous prompts, tools asked
+                  on up to 6 of 8.
+                </p>
+              </div>
+              <div className="pa-card">
+                <p className="pa-card__i">Why the two disagree</p>
+                <h3>Real tasks carry context</h3>
+                <p style={{ marginTop: 6 }}>
+                  Real tasks arrive with enough context that the model always has something plausible to run with.
+                  Ambiguity designed for testing is not ambiguity as it shows up in work.
+                </p>
+              </div>
+            </div>
           </Block>
 
           <Block>
@@ -957,7 +1433,17 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Define" title="2:3 Point of view and How might we" />}>
+            <Row left={<Head phase="Define" title="2:3 Affinity mapping" />}>
+              <p className="pa-body">
+                Clustering every note and code showed what each part of the conversation revealed, including two
+                honest nulls.
+              </p>
+            </Row>
+            <Table head={['Cluster', 'What it revealed']} rows={AFFINITY} />
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Define" title="2:4 Point of view and How might we" />}>
               <p className="pa-body">
                 On real work, the AI never asked and the goals never changed. Each breakdown was a reasonable answer
                 missing a frame nobody said out loud.
@@ -995,7 +1481,16 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Define" title="2:4 Intent never changed. Expression did." />}>
+            <Row left={<Head phase="Define" title="2:5 Six candidates, three written up" />}>
+              <p className="pa-body">
+                Six sessions had a real mismatch and repair. I wrote up three, each a different kind of hidden intent.
+              </p>
+            </Row>
+            <Table head={['Session', 'Mismatch → repair', 'Decision']} rows={CANDIDATES} />
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Define" title="2:6 Intent never changed. Expression did." />}>
               <p className="pa-body">
                 P08’s four turns look like a change of mind. Her own answer shows the same goal from the first message
                 to the last, revealed in stages. Across three close-up episodes, refining didn’t make prompts longer.
@@ -1006,10 +1501,15 @@ function ProjectPromptsArentEnough() {
               head={['', 'P06 · visual · tacit', 'P07 · UI · codified', 'P08 · UX · relational']}
               rows={EPISODES}
             />
+            <Row left={<p className="pa-note pa-note--sky">P06, the hidden layer</p>}>
+              <Quote who="P06, visual designer">
+                “I’m thinking in images, composition and texture, but I have to convert all of that into adjectives.”
+              </Quote>
+            </Row>
           </Block>
 
           <Block>
-            <Row left={<Head phase="Define" title="2:5 Breakdowns, filled only from real sessions" />}>
+            <Row left={<Head phase="Define" title="2:7 Breakdowns, filled only from real sessions" />}>
               <p className="pa-body">
                 Every row comes from a session. Two types I expected never happened, and I report them as checked
                 nulls instead of stretching the table.
@@ -1019,7 +1519,7 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Define" title="2:6 Where friction peaks" />}>
+            <Row left={<Head phase="Define" title="2:8 Where friction peaks" />}>
               <p className="pa-body">
                 Friction peaks at one moment: when a designer knows the answer is wrong but has to put why into words.
                 Tacit knowledge is forced into language for the first time. The curve is drawn qualitatively, not
@@ -1064,7 +1564,34 @@ function ProjectPromptsArentEnough() {
           </Block>
 
           <Block>
-            <Row left={<Head phase="Define" title="2:7 Insights to design principles" />}>
+            <Row left={<Head phase="Define" title="2:9 Synthesis, answered from evidence" />}>
+              <p className="pa-body">Each research question, answered only from what the sessions showed.</p>
+            </Row>
+            <Table head={['Question', 'What the data shows']} rows={SYNTHESIS} />
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Define" title="2:10 Testing my own framework" />}>
+              <p className="pa-body">
+                Four axes went in; two survived. Stability never varied, and explicitness and completeness moved
+                together.
+              </p>
+            </Row>
+            <Table
+              head={['P', 'Explicitness', 'Completeness', 'Stability', 'Repair effort']}
+              rows={FRAMEWORK}
+            />
+            <Row left={<p className="pa-note">The revision</p>}>
+              <p className="pa-body">
+                Two real axes: <b>upfront specification</b>, and <b>repair effort and type</b>. Stability split into
+                goal stability, which never moved, and expression stability, which moved a lot. The data corrected my
+                own model.
+              </p>
+            </Row>
+          </Block>
+
+          <Block>
+            <Row left={<Head phase="Define" title="2:11 Insights to design principles" />}>
               <p className="pa-body">
                 Each principle traces back to a quote or a pattern. The last three came only from the data; I hadn’t
                 imagined them.
@@ -1130,6 +1657,24 @@ function ProjectPromptsArentEnough() {
               </div>
             </Row>
           </Block>
+
+          <Block>
+            <Row left={<Head phase="Contribution" title="Why this matters" />}>
+              <p className="pa-body">What SP1 adds, for whom.</p>
+            </Row>
+            <Table head={['For', 'Value']} rows={CONTRIBUTION} />
+            <Row left={<p className="pa-note">It changed my own starting model</p>}>
+              <div className="pa-flow">
+                <p className="pa-body">
+                  “Evolving intent” retired · four axes became two · a third audit mode (refuse) · a new repair type
+                  (structural).
+                </p>
+                <Quote who="">
+                  A smaller, fully honest study that survives scrutiny is worth more than a bigger one that doesn’t.
+                </Quote>
+              </div>
+            </Row>
+          </Block>
         </section>
 
         {/* ---------------- SP2 / case soon ---------------- */}
@@ -1151,6 +1696,22 @@ function ProjectPromptsArentEnough() {
                 </div>
               ))}
             </div>
+            <Row left={<p className="pa-note">The SP2 plan</p>}>
+              <Table head={['Prototype and test', 'Strengthen the evidence']} rows={SP2_PLAN} />
+            </Row>
+          </Block>
+        </section>
+
+        {/* ---------------- References ---------------- */}
+        <section className="pa-wrap pa-section">
+          <Block>
+            <Row left={<Head phase="References" title="Primary sources" />}>
+              <ul className="pa-refs">
+                {REFERENCES.map((r) => (
+                  <li key={r}>{r}</li>
+                ))}
+              </ul>
+            </Row>
           </Block>
         </section>
 
