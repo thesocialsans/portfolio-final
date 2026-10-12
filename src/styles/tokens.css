@@ -44,6 +44,21 @@
   --cd-body: #4b4f57;
   --cd-line: #dcdde0;
   --cd-label: #70747c;
+  --pa-ink: #2b2740;
+  --pa-soft: #6e6884;
+  --pa-hair: #e7e3ef;
+  --pa-lav: #ece7f8;
+  --pa-lav-deep: #5b4e8c;
+  --pa-rose: #c2577a;
+  --pa-rose-tint: #fcedef;
+  --pa-peach: #fdefe5;
+  --pa-mint: #e2f3eb;
+  --pa-mint-ink: #2f7556;
+  --pa-sky: #e8f2fb;
+  --pa-sky-ink: #3a6e99;
+  --pa-butter: #fbf4dc;
+  --pa-chip: #f2f0f5;
+  --pa-dark: #3b3356;
 
   /* Typography */
   --font-display: 'Quicksand', system-ui, sans-serif;

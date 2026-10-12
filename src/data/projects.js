@@ -14,7 +14,7 @@ export const projects = [
     category: 'Conversational UX | 2026',
     image: bg01,
     accent: 'rgba(87, 36, 64, 0.3)',
-    route: null,
+    route: '/projects/prompts-arent-enough',
   },
   {
     id: 'ai-recruitment-screening',
