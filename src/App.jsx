@@ -5,7 +5,7 @@ import Portfolio from './pages/Portfolio'
 import ProjectPlaceholder from './pages/ProjectPlaceholder'
 import ProjectAiRecruitment from './pages/ProjectAiRecruitment'
 import ProjectAdoptDontShop from './pages/ProjectAdoptDontShop'
-import ProjectWhoAreYouWhenYouVote from './pages/ProjectWhoAreYouWhenYouVote'
+import ProjectConductorCompanion from './pages/ProjectConductorCompanion'
 import ProjectFindingYourWay from './pages/ProjectFindingYourWay'
 import ProjectCoverMitra from './pages/ProjectCoverMitra'
 import BackgroundMusic from './components/BackgroundMusic'
@@ -20,7 +20,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/projects/ai-recruitment-screening" element={<ProjectAiRecruitment />} />
         <Route path="/projects/pet-adoption" element={<ProjectAdoptDontShop />} />
-        <Route path="/projects/who-are-you-when-you-vote" element={<ProjectWhoAreYouWhenYouVote />} />
+        <Route path="/projects/conductor-companion" element={<ProjectConductorCompanion />} />
         <Route path="/projects/covermitra" element={<ProjectCoverMitra />} />
         <Route path="/projects/tnstc" element={<ProjectFindingYourWay />} />
       </Routes>

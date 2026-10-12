@@ -39,15 +39,14 @@ export const projects = [
     route: '/projects/pet-adoption',
   },
   {
-    id: 'who-are-you-when-you-vote',
+    id: 'conductor-companion',
     number: '04',
-    title: 'Who are you, when you vote?',
-    description:
-      'Using humour and visual storytelling to encourage young voters to question, reflect, and choose consciously.',
-    category: 'Editorial & Interaction Design | 2025',
+    title: 'Understanding the work behind every ticket',
+    description: 'Designing a digital companion around the conductor’s real-world constraints',
+    category: 'UX Research, Synthesis, UX Design, Prototyping',
     image: bg04,
     accent: 'rgba(142, 91, 60, 0.3)',
-    route: '/projects/who-are-you-when-you-vote',
+    route: '/projects/conductor-companion',
   },
   {
     id: 'covermitra',

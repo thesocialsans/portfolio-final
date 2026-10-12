@@ -31,6 +31,19 @@
   --cm-purple: #531965;
   --cm-orange: #f07c00;
   --cm-cream: #faf6fb;
+  --cd-navy: #0b2545;
+  --cd-yellow: #f2b01e;
+  --cd-signal: #ffd400;
+  --cd-red: #c8382b;
+  --cd-teal: #0f766e;
+  --cd-sky: #edf7fe;
+  --cd-blush: #fff0ec;
+  --cd-tag: #f5f5f3;
+  --cd-gold: #7a5c00;
+  --cd-ink: #121721;
+  --cd-body: #4b4f57;
+  --cd-line: #dcdde0;
+  --cd-label: #70747c;
 
   /* Typography */
   --font-display: 'Quicksand', system-ui, sans-serif;
